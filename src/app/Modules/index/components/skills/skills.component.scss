@@ -1,0 +1,66 @@
+.seccionSkills {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+    color: white;
+  }
+
+
+  h1{
+    font-weight: 800;
+  }
+
+  p{
+    color: rgba(255, 255, 255, 0.827);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    letter-spacing: -0.017em;
+    font-weight: 400;
+  }
+
+  span{
+    color: rgb(70, 152, 254);
+    font-weight: 600;
+  }
+
+  .introTitle{
+    color: rgba(183, 215, 255, 0.803);
+
+  }
+
+  .discoverBtn {
+    background-color: rgba(255, 255, 255, 0.036);
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 35px;
+    color: rgba(255, 255, 255, 0.797);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    font-weight: 500;
+    position: relative; /* Necesario para el posicionamiento absoluto del icono */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+.discoverBtn .arrow {
+    margin-inline-start: 5px;
+    position: absolute;
+    transition: margin-left 0.3s ease; /* Transición suave para el margen izquierdo */
+}
+
+.discoverBtn:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo más claro al hacer hover */
+}
+
+.discoverBtn:hover .arrow {
+    margin-left: 10px; /* Desplaza el icono hacia la derecha al hacer hover */
+}
+
+.discoverBtn:active {
+  transform: scale(0.95); /* Reduce ligeramente el tamaño del botón al hacer clic */
+  transition: ease-in-out 0.06s;
+  background-color: rgba(255, 255, 255, 0.014); /* Fondo más claro al hacer hover */
+}
+
+
+

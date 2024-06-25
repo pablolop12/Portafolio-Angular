@@ -1,0 +1,32 @@
+.seccionAbout {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.boxAbout {
+  background-color: rgba(87, 87, 89, 0.177); /* Fondo gris transparente */
+  border: 1px solid hsla(0, 0%, 100%, 0.142); /* Borde de 1px negro */
+  outline: 1px solid rgba(25, 25, 25, 0.918); /* Outline de 1px negro */
+  padding: 10px; /* Espacio interno para que el contenido no toque el borde */
+  margin: 10px; /* Espacio externo para separar de otros elementos */
+  box-sizing: border-box; /* Incluir padding y borde en el tamaño total */
+  border-radius: 15px;
+}
+
+
+.imgHolder{
+  background-color: rgb(233, 228, 228);
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.textPrimary{
+color: rgba(255, 255, 255, 0.899);
+}
+
+.textSecondary{
+  color: rgba(160, 160, 160, 0.871);
+}
