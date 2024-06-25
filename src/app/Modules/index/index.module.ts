@@ -10,17 +10,37 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { FormationComponent } from './components/formation/formation.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { PolygonSkillsComponent } from './polygon-skills/polygon-skills.component';
+import { PolygonSkillsComponent } from './components/polygon-skills/polygon-skills.component';
 
+
+// Importar los módulos de Ng Zorro necesarios
+import { NzStepsModule } from 'ng-zorro-antd/steps';
+import { NzPopoverModule } from 'ng-zorro-antd/popover';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
 ];
 
-
 @NgModule({
-  declarations: [IndexComponent, NavbarComponent, ProfileComponent, ProjectsComponent, SkillsComponent, ExperienceComponent, FormationComponent, AboutComponent, ContactComponent, PolygonSkillsComponent],
-  imports: [RouterModule.forChild(routes), CommonModule],
+  declarations: [
+    IndexComponent,
+    NavbarComponent,
+    ProfileComponent,
+    ProjectsComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    FormationComponent,
+    AboutComponent,
+    ContactComponent,
+    PolygonSkillsComponent,
+
+  ],
+  imports: [
+    RouterModule.forChild(routes),
+    CommonModule,
+    NzStepsModule,   
+    NzPopoverModule 
+  ],
   exports: [RouterModule]
 })
 export class IndexModule { }
