@@ -1,4 +1,8 @@
 :root {
+  --white: white;
+  //NAVBAR
+  --navVignette: #000000dc;
+
   //TEXTO ANIMADO
   --tAnimado1: #0033cc;
   --tAnimado2: #00c8ff;
@@ -30,12 +34,22 @@
   --line4: #3b7ab0;
   --line5: #9abbc6;
 
+  --discoverBtnBg: #ffffff09;
+  --discoverBtnBrdr: #ffffff2b;
+  --discoverBtnHover: #ffffff1a;
+  --discoverBtnActive: #ffffff04;
+
   //TRAYECTORIA
   --tl1: #ffffff00;
   --tl2: #ffffff4d;
   --formationBox: #252525;
   --baseExp: #222222bb;
 
+  //PROJECTS
+  --light: #195db6;
+  --gitprev: #222222;
+  --gitText2: #ffffffa7;
+  --bento: #222222;
 
 
   //BACKGROUND
@@ -63,28 +77,32 @@
 
 
 .light-theme {
+  --white: white;
+  //NAVBAR
+  --navVignette: #ffffffdc;
+
   //TEXTO ANIMADO
-  --tAnimado1: #000000;
-  --tAnimado2: #000000;
-  --tAnimado3: #000000;
-  --tAnimado4: #000000;
-  --tAnimado5: #ffffff;
+  --tAnimado1: #272727;
+  --tAnimado2: #272727;
+  --tAnimado3: #272727;
+  --tAnimado4: #272727;
+  --tAnimado5: #272727;
 
   //TEXTOS RECURRENTES
-  --text1: rgb(39, 39, 39);
+  --text1: #272727;
   --text2: #1e1e1ea5;
-  --accent: #474747;
-  --pretext: #848484cd;
+  --accent: #1b5935;
+  --pretext: #2c573e;
   --date: #000000a9;
   --external: #00000054;
 
   //BOTONES ACCIÓN
-  --bText: #ff0000;
-  --bBg: #b300003f;
+  --bText: #219054;
+  --bBg: #17b4583f;
   --bBgHover: #dd51513f;
   --bClick: #5f02023f;
 
-  --dispBg: #00000092;
+  --dispBg: #00000012;
 
   //POLYGON SKILLS
   --line1: #000000;
@@ -93,11 +111,23 @@
   --line4: #000000;
   --line5: #000000;
 
+  --discoverBtnBg: #19191909;
+  --discoverBtnBrdr: #0000002b;
+  --discoverBtnHover: #0000008a;
+  --discoverBtnActive: #ffffff04;
+
   //TRAYECTORIA
   --tl1: #00000000;
   --tl2: #00000093;
-  --formationBox: #2525255b;
-  --baseExp: #2222222a;
+  --formationBox: #ffffff7d;
+  --baseExp: #dadada7c;
+
+  //PROJECTS
+  --light: #4c9b6e;
+  --gitprev: #e2e2e2;
+  --gitText2: #000000a7;
+  --bento: #f3f3f3;
+  
 
 
   //BACKGROUND
@@ -109,14 +139,14 @@
   --cir4: #00000067;
   --cir5: #0000001b;
 
-  --cirG1: #000000;
-  --cirG2: #000000;
+  --cirG1: #5d9a7a;
+  --cirG2: #5d9a7a;
 
-  --cirG3: #000000;
-  --cirG4: #000000;
+  --cirG3: #5d9a7a;
+  --cirG4: #5d9a7a;
 
-  --cirG5: #000000;
-  --cirG6: #000000;
+  --cirG5: #5d9a7a;
+  --cirG6: #5d9a7a;
 
   //OTROS
   --badgeB: #ff00001f; //Borde del badge experiencia/formación

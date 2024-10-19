@@ -2,16 +2,16 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
-  color: white;
+  color: var(--text1);
 }
 
 h1{
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.889);
+  color: var(--text1);
 }
 
 p{
-  color: rgba(255, 255, 255, 0.648);
+  color: var(--text2);
   font-size: 1.125rem;
   line-height: 1.5;
   letter-spacing: -0.017em;
@@ -19,12 +19,12 @@ p{
 }
 
 span{
-  color: rgb(70, 152, 254);
+  color: var(--accent);
   font-weight: 600;
 }
 
 .introTitle{
-  color: rgba(183, 215, 255, 0.803);
+  color: var(--pretext);
 
   
 }

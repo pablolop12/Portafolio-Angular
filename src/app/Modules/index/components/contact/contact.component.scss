@@ -2,14 +2,14 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    color: white;
+    color: var(--text);
 }
 
 
 .preTittle{
     font-size: 30px !important;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.768);
+    color: var(--text2);
     margin: 0;
 }
 
@@ -26,13 +26,13 @@
 
 .nombre-animado {
     font-family: Frygia-Heavy;
-    background: -webkit-linear-gradient(0deg, #0033cc, #00c8ff, #0066ff, #00b7ff, #0033cc);
+    background: -webkit-linear-gradient(0deg, var(--tAnimado1), var(--tAnimado2), var(--tAnimado3), var(--tAnimado4), var(--tAnimado5));
     background-size: 400%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animacion 5s linear infinite;
-}
+  }
 
 @keyframes animacion {
     0% {
@@ -55,7 +55,7 @@
     border-radius: 15px;
     //border: #0052cc solid 1px;
     border: none;
-    background-color: #007db33f;
+    background-color: var(--bBg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,18 +64,18 @@
     font-size: 16px;
     transition: 0.2s ease-in-out;
     .text-semi2 {
-        color: rgb(112, 208, 235);
+        color: var(--bText);
       } 
   }
   
   .linkHolder:hover {
-    background-color: #51b3dd3f;
+    background-color: var(--bBgHover);
   }
   
   .linkHolder:active{
     transform: scale(0.95); /* Reduce ligeramente el tamaño del botón al hacer clic */
     transition: ease-in-out 0.06  s;
-    background-color: #02435f3f;
+    background-color: var(--bClick);
   }
 
 
@@ -85,7 +85,8 @@
     align-items: center;
     height: 40px; /* Define a height for the container */
     span{
-        background-color: rgb(0, 149, 255);
+        background-color: var(--accent);
+        color: white;
         border-radius: 5px 0 0 5px;
         display: flex;
         justify-content: center;
@@ -117,7 +118,7 @@
   }
 
   p{
-    color: rgba(255, 255, 255, 0.648);
+    color: var(--text2);
     font-size: 1.125rem;
     line-height: 1.5;
     letter-spacing: -0.017em;

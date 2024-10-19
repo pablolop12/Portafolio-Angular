@@ -2,16 +2,9 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    color: white;
+    color: var(--text1);
 }
 
-body {
-    background-color: #0d0d2b;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-}
 
 .background-wrapper {
     position: relative;
@@ -27,7 +20,7 @@ body {
     filter: blur(60px);
     width: 800px;
     height: 400px;
-    background: radial-gradient(circle, rgb(25, 93, 182), rgba(29, 37, 60, 0));
+    background: radial-gradient(circle, var(--light), rgba(29, 37, 60, 0));
     border-radius: 50%;
     transform: translate(-50%, -50%);
     filter: blur(50px);
@@ -41,11 +34,11 @@ body {
 
 h1 {
     font-weight: 800;
-    color: rgba(255, 255, 255, 0.889);
+    color: var(--text);
 }
 
 p {
-    color: rgba(255, 255, 255, 0.648);
+    color: var(--text2);
     font-size: 1.125rem;
     line-height: 1.5;
     letter-spacing: -0.017em;
@@ -53,12 +46,12 @@ p {
 }
 
 span {
-    color: rgb(70, 152, 254);
+    color: var(--accent);
     font-weight: 600;
 }
 
 .introTitle {
-    color: rgb(194, 236, 255);
+    color: var(--pretext);
 }
 
 .holder2 {
@@ -68,7 +61,7 @@ span {
 }
 
 .gitPrev {
-    background-color: #222222bb;
+    background-color: var(--gitprev);
     backdrop-filter: blur(4px);
     border-radius: 8px;
 }
@@ -80,7 +73,7 @@ span {
 }
 
 .bento {
-    background-color: #222222;
+    background-color: #ff000000;
     backdrop-filter: blur(4px);
     border-radius: 8px 8px 0 0; /* Top corners rounded */
     border-radius: 8px;
@@ -103,8 +96,8 @@ span {
 }
 
 .info-band {
-    background-color: #222222;
-    color: white;
+    background-color: var(--bento);
+    color: var(--text2);
     padding: 10px;
     position: absolute;
     bottom: 0;
@@ -125,8 +118,8 @@ span {
     left: 0;
     width: 100%;
     height: calc(100% - 40px); /* Adjust the height to account for the info band height */
-    background-color: #222222;
-    color: white;
+    background-color: var(--vento);
+    color: var(--text1);
     padding: 10px;
     box-sizing: border-box;
     transition: top 0.3s ease;

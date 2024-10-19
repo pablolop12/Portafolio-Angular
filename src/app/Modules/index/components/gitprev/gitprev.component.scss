@@ -16,7 +16,7 @@
     margin-top: 70px;
     max-height: 120px;
     border-radius: 50%;
-    border: 6px solid #1f1f1f;
+    border: 6px solid var(--gitprev);
     /* Añade un borde de 5px con color azul */
 }
 
@@ -28,46 +28,46 @@
 
 .login{
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.655);
+    color: var(--gitText2);
     margin-bottom: 10px;
 }
 
 .bio{
     font-weight: 400;
     font-size: 17px ;
-    color: rgba(255, 255, 255, 0.834);
+    color: var(--text1);
     margin-bottom: 10px;
 }
 
 .visitBtn{
-    background-color: #494c507b   ;
-    border: solid 1px rgba(255, 255, 255, 0.179);
+    background-color: var(--discoverBtnBg)   ;
+    border: solid 1px var(--discoverBtnBrdr);
     width: 100%;
     padding: 4px;
     border-radius: 5px;
-    color: rgba(255, 255, 255, 0.897);
+    color: var(--text1);
     text-decoration: none;
     display: inline-block;
 }
 
 .followers{
     font-size: 16px;
-    color:  rgba(255, 255, 255, 0.655);
+    color:  var(--gitText2);
     font-weight: 300;
 
     .number{
-        color: white !important;
+        color: var(--text1) !important;
     }
 }
 
 .extras{
     font-size: 16px;
-    color: white;
+    color: var(--text1);
     margin: 0;
     font-weight: 300;
 
     i{
-        color: rgba(255, 255, 255, 0.655);  
+        color: var(--gitText2);  
     }
 }
 
@@ -77,12 +77,12 @@
     top: 5px;
     right: 5px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.74);
+    color: var(--white);
     transition: color 0.1s ease-in-out;
   }
   
   .logoGit:hover {
-    color: rgb(255, 255, 255);
+    color: var(--text1);
   }
   
 
@@ -97,6 +97,3 @@ p {
     font-size: 1.2rem;
 }
 
-.link {
-    color: rgba(255, 255, 255, 0.104);
-}

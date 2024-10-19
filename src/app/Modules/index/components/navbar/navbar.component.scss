@@ -17,9 +17,9 @@ SCSS de: Navbar
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: inset 0px 200px 53px -102px rgba(0, 0, 0, 0.863);
-  -moz-box-shadow: inset 0px 200px 53px -102px rgba(0, 0, 0, 0.863);
-  box-shadow: inset 0px 180px 53px -102px rgba(0, 0, 0, 0.863);
+  -webkit-box-shadow: inset 0px 200px 53px -102px var(--navVignette);
+  -moz-box-shadow: inset 0px 200px 53px -102px var(--navVignette);
+  box-shadow: inset 0px 180px 53px -102px var(--navVignette);
   z-index: -1;
   pointer-events: none;
 
@@ -27,9 +27,7 @@ SCSS de: Navbar
 
 
 
-.navbar-dark.bg-dark {
-  background-color: #222 !important;
-}
+
 
 
 .navbar-transparent {
@@ -60,18 +58,13 @@ SCSS de: Navbar
 }
 
 .nav-link{
-  color: white;
+  color: var(--text1);
   font-size: 18px;
   font-weight: 500;
   padding-left: 40px;
 }
 
-.cvButton{
-  background-color: #ffffff;
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
-}
+
 
 
 
@@ -136,16 +129,13 @@ SCSS de: Navbar
   transform: rotate(0);
 }
 
-/* State when navbar is collapsed (END) */
 
-/* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
-  background-color: #2da3da;
+  background-color: var(--accent);
 }
 
 .navbar-nav .nav-item.active .nav-link {
-  color: rgb(70, 152, 254); /* Cambia esto al color que desees */
-  font-weight: bold;
+  color: var(--accent); 
 }
 
 .navbar-nav .nav-item .nav-link {
