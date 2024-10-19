@@ -1,1 +1,85 @@
-<p>projects works!</p>
+<div class="seccionExperience">
+  <div class="container">
+    <div class="background-wrapper">
+      <div class="content">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6">
+            <p class="mb-0 introTitle text-center">Descubre mis trabajos</p>
+            <h1 class="text-center">Algunos de mis proyectos</h1>
+            <p class="text-center">Estos son algunos de los proyectos que he hecho a lo largo de mi carrera como programador. 
+              Si quieres descubrir más, puedes echar un vistazo a mi perfil de <span>GitHub</span>, donde tengo mis demás repositorios.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="baseContent mt-3">
+        <div class="row">
+
+          <!-- Perfil de Github -->
+          <div class="col-lg-4">
+            <div class="holder2" style="max-width: 500px;">
+              <div class="gitPrev ">
+                <app-gitprev></app-gitprev>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Boxes -->
+          <div class="col-lg-8">
+            <div class="bentoHolder d-flex flex-wrap h-100">
+              <div class="holder col-lg-6">
+                <div class="bento col-12">
+                  <div class="project-image">img</div>
+                  <div class="info-band" (click)="toggleDetails($event)">
+                    <p>Gestor de rutinas</p>
+                    <span class="arrow"><i class="bi bi-chevron-up"></i></span>
+                  </div>
+                  <div class="details">
+                    <p>Details about project 1...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="holder col-6">
+                <div class="bento col-lg-12">
+                  <img src="https://via.placeholder.com/400x300" alt="Project Preview 2" class="project-image">
+                  <div class="info-band" (click)="toggleDetails($event)">
+                    <p>Tracker nutricional</p>
+                    <span class="arrow"><i class="bi bi-chevron-up"></i></span>
+                  </div>
+                  <div class="details">
+                    <p>Details about project 2...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="holder col-6">
+                <div class="bento col-lg-12">
+                  <img src="https://via.placeholder.com/400x300" alt="Project Preview 3" class="project-image">
+                  <div class="info-band" (click)="toggleDetails($event)">
+                    <p>Gestión de incidencias</p>
+                    <span class="arrow"><i class="bi bi-chevron-up"></i></span>
+                  </div>
+                  <div class="details">
+                    <p>Details about project 3...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="holder col-6">
+                <div class="bento col-lg-12">
+                  <img src="https://via.placeholder.com/400x300" alt="Project Preview 4" class="project-image">
+                  <div class="info-band" (click)="toggleDetails($event)">
+                    <p>Gestor de incidencias</p>
+                    <span class="arrow"><i class="bi bi-chevron-up"></i></span>
+                  </div>
+                  <div class="details">
+                    <p>Details about project 4...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

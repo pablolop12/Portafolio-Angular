@@ -3,10 +3,77 @@
     overflow: hidden;
     z-index: 1;
     
-    color: white;
+    color: var(--text1);
   }
 
   .baseExperience{
-    background-color: #0132575f;
+    background-color: var(--baseExp);
+    backdrop-filter: blur(4px);
     border-radius: 8px;
   }
+
+  .baseExperience2{
+    background-color: var(--baseExp);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .title
+  {
+    text-align: center;
+  }
+
+  h1{
+    font-weight: 800;
+    color: var(--text1);
+  }
+
+  p{
+    color: var(--text2);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    letter-spacing: -0.017em;
+    font-weight: 400;
+  }
+
+  span{
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .custom-paragraph {
+    max-width: 800px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .custom-paragraph {
+        max-width: 90%; /* Para pantallas pequeñas, ocupa el 90% del ancho */
+    }
+}
+
+
+.badge{
+  background-color: var(--badgeBg);
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text1);
+  border-radius: 50px;
+  padding: 6px;
+  padding-inline: 12px;
+  border: solid 1px var(--badgeB);
+  
+}
+
+.component {
+  width: 100%; /* Ajustar el ancho del componente si es necesario */
+  display: flex;
+  align-items: center;
+}
+
+.component2 {
+  width: 100%; /* Ajustar el ancho del componente si es necesario */
+}
+

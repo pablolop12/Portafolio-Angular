@@ -1,34 +1,14 @@
-body {
-  overflow-x: hidden;
-  height: 800vh;
-}
-
-
-
-.vignette {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-box-shadow: inset 0px 200px 53px -102px rgba(0, 0, 0, 0.863);
-  -moz-box-shadow: inset 0px 200px 53px -102px rgba(0, 0, 0, 0.863);
-  box-shadow: inset 0px 180px 53px -102px rgba(0, 0, 0, 0.863);
-  z-index: 2;
-  pointer-events: none;
-
-}
-
 .sectionDivider{
-  margin-bottom: 20vh;
+  height: 20vh;
 }
+
 
 //BACKGROUND
 .background {
   position: relative;
-  background-color: #161616;
-  height: 100%;
+  background-color: var(--background);
   overflow: hidden;
+
 }
 
 .background:before,
@@ -53,7 +33,7 @@ body {
   top: 55vh;
   left: -10%;
   margin: auto;
-  background-color: #04abff;
+  background-color: var(--cir0);
   z-index: 1;
 }
 
@@ -63,7 +43,7 @@ body {
   top: 45vh;
   left: -35vh;
   margin: auto;
-  background-color: #0471ff;
+  background-color:var(--cir1) ;
   z-index: 0;
 }
 
@@ -73,7 +53,7 @@ body {
   top: -30vh;
   right: -50vh;
   margin: auto;
-  background-color: #0471ff;
+  background-color: var(--cir2);
   z-index: 1;
 }
 
@@ -83,7 +63,7 @@ body {
   top: -50vh;
   right: -10%;
   margin: auto;
-  background-color: #048aff;
+  background-color: var(--cir3);
   z-index: 0;
 }
 
@@ -93,7 +73,7 @@ body {
   top: 230vh;
   right: -10%;
   margin: auto;
-  background-color: #048aff67;
+  background-color: var(--cir4);
   z-index: 0;
 }
 
@@ -103,7 +83,7 @@ body {
   top: 190vh;
   left: 0%;
   margin: auto;
-  background-color: #048aff1b;
+  background-color: var(--cir5);
   z-index: 0;
 }
 
@@ -113,16 +93,16 @@ body {
 
 @keyframes glow {
   0% {
-    background-color: #04e6ff;
-    box-shadow: 0 0 10px #0471ff, 0 0 20px #0471ff, 0 0 30px #0471ff, 0 0 40px #0471ff;
+    background-color: var(--cirG1);
+    box-shadow: 0 0 10px var(--cirG2), 0 0 20px var(--cirG2), 0 0 30px var(--cirG2), 0 0 40px var(--cirG2);
   }
   50% {
-    background-color: #00c3ff;
-    box-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff, 0 0 40px #00b7ff;
+    background-color: var(--cirG3);
+    box-shadow: 0 0 10px var(--cirG4), 0 0 20px var(--cirG4), 0 0 30px var(--cirG4), 0 0 40px var(--cirG4);
   }
   100% {
-    background-color: #0492ff;
-    box-shadow: 0 0 10px #0471ff, 0 0 20px #0471ff, 0 0 30px #0471ff, 0 0 40px #0471ff;
+    background-color: var(--cirG5);
+    box-shadow: 0 0 10px var(--cirG6), 0 0 20px var(--cirG6), 0 0 30px var(--cirG6), 0 0 40px var(--cirG6);
   }
 }
 
@@ -201,3 +181,5 @@ body {
     height: 400px;
   }
 }
+
+

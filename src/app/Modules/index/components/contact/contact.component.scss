@@ -1,0 +1,125 @@
+.seccionContact {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+}
+
+
+.preTittle{
+    font-size: 30px !important;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.768);
+    margin: 0;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .formulario form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+
+
+.nombre-animado {
+    font-family: Frygia-Heavy;
+    background: -webkit-linear-gradient(0deg, #0033cc, #00c8ff, #0066ff, #00b7ff, #0033cc);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animacion 5s linear infinite;
+}
+
+@keyframes animacion {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+}
+
+
+.linkHolder {
+    padding: 5px;
+    padding-inline: 10px;
+    border-radius: 15px;
+    //border: #0052cc solid 1px;
+    border: none;
+    background-color: #007db33f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+    .text-semi2 {
+        color: rgb(112, 208, 235);
+      } 
+  }
+  
+  .linkHolder:hover {
+    background-color: #51b3dd3f;
+  }
+  
+  .linkHolder:active{
+    transform: scale(0.95); /* Reduce ligeramente el tamaño del botón al hacer clic */
+    transition: ease-in-out 0.06  s;
+    background-color: #02435f3f;
+  }
+
+
+  .input-groupOwn{
+
+    display: flex;
+    align-items: center;
+    height: 40px; /* Define a height for the container */
+    span{
+        background-color: rgb(0, 149, 255);
+        border-radius: 5px 0 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7px;
+        width: 40px;
+        height:100%;
+    }
+
+    input{
+        margin-bottom: 0;
+        width: 100%;
+        border-radius: 0 5px 5px 0 !important;
+        height: 100%;
+        border: none;
+        padding-left: 10px;
+        color: black;
+    }
+
+    input:focus {
+        outline: none; /* Remove default outline */
+    }
+
+  }
+
+  .xtra{
+    font-size: 19px;
+    border-radius: 5px;
+  }
+
+  p{
+    color: rgba(255, 255, 255, 0.648);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    letter-spacing: -0.017em;
+    font-weight: 400;
+  }

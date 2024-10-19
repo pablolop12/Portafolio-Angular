@@ -1,0 +1,86 @@
+.formation1{
+  padding: 10px;
+}
+.formation2{
+  padding: 5px;
+}
+
+.formationBox {
+  margin-bottom: 10px;
+  background-color: var(--formationBox);
+  border-radius: 5px;
+}
+
+.formationHolder {
+  width: 100%;
+  display: flex;
+  align-items: stretch; /* Ensure children elements stretch to the same height */
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  padding: 10px;
+  flex: 0 0 auto;
+
+  img{
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+  }
+}
+
+.text {
+  padding: 5px;
+  //padding-right: 10px;
+  flex: 1; /* Allow text to take remaining space */
+}
+
+.text h1 {
+  font-size: 30px;
+}
+
+.text h2 {
+  font-size: 20px;
+}
+
+.text h3 {
+  font-size: 15px;
+}
+
+
+//Divisor
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: var(--text2); //#eeeeee56
+}
+
+.extrasContainer {
+display: flex;
+height: 100%;
+width: 100%;
+}
+
+.eHolder {
+  width: 33.33%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.extra {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--text);
+
+  background-color: rgb(37, 37, 37);
+  border-radius: 5px;
+  padding: 10px;
+}

@@ -21,9 +21,9 @@
 }
 
 .vignette1{
-  -webkit-box-shadow: inset 0px 0px 72px 84px rgba(22,22,22,1);
-  -moz-box-shadow: inset 0px 0px 72px 84px rgba(22,22,22,1);
-  box-shadow: inset 0px 0px 72px 84px rgba(22,22,22,1);
+  -webkit-box-shadow: inset 0px 0px 72px 84px var(--background);
+  -moz-box-shadow: inset 0px 0px 72px 84px var(--background);
+  box-shadow: inset 0px 0px 72px 84px var(--background);
   position: absolute;
   height: 100%;
   width: 420px;
@@ -41,7 +41,7 @@
 .table-container td {
   height: 100px; /* Altura de las celdas */
   width: 100px; /* Ancho de las celdas */
-  border: 3px solid #276375; /* Líneas interiores en verde de 2px de grueso */
+  border: 3px solid #00baf3; /* Líneas interiores en verde de 2px de grueso */
   padding: 0; /* Quita el padding para asegurar la altura y ancho fijo */
   animation: borderColorChange 4s infinite; /* Aplica la animación */
 }
@@ -157,19 +157,19 @@
 
 @keyframes borderColorChange {
   0% {
-    border-color: #9abbc6;
+    border-color: var(--line1);
   }
   25% {
-    border-color: #6095a5;
+    border-color: var(--line2);
   }
   50% {
-    border-color: #246f86;
+    border-color: var(--line3);
   }
   75% {
-    border-color: #3b7ab0;
+    border-color: var(--line4);
   }
   100% {
-    border-color: #9abbc6;
+    border-color: var(--line5);
   }
 }
 

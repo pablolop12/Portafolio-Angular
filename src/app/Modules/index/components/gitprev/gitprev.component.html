@@ -1,0 +1,22 @@
+<div *ngIf="profile" class="profile">
+
+    <div class="imgHolder">
+        <a class="logoGit" target="_blank" href="https://www.github.com/pablolop12"><i class="fa-brands fa-github me-2"></i></a>
+        <img [src]="profile.avatar_url" alt="Avatar" class="avatar img-fluid">
+    </div>
+
+    <div class="content">
+        <h1 class="name">{{ profile.name }}</h1>
+        <p class="login">{{ profile.login }}</p>
+        <p class="bio">"{{ profile.bio }}"</p>
+        
+        <p class="followers mb-4"><i class="bi bi-people me-2"></i><strong class="number">{{ profile.followers }}</strong> seguidores · <strong class="number">{{ profile.following }}</strong> seguidos</p>
+        <p class="extras"><i class="bi bi-geo-alt me-2"></i> <strong>{{ profile.location }}</strong></p>    
+        <p class="followers mb-1"><i class="fa-regular fa-folder-closed me-2"></i> <strong class="number">{{ profile.public_repos }}</strong> repositorios públicos</p>
+        <a [href]="profile.html_url" target="_blank"  class="visitBtn mt-3 text-center"><i class="fa-brands fa-github me-2"></i>Visitar perfil de GitHub</a>
+        
+    </div>
+
+  
+  </div>
+  

@@ -1,7 +1,7 @@
 .seccionSkills {
-    position: relative;
     overflow: hidden;
     z-index: 1;
+
     
     color: white;
   }
@@ -9,10 +9,11 @@
 
   h1{
     font-weight: 800;
+    color: var(--text1);
   }
 
   p{
-    color: rgba(255, 255, 255, 0.827);
+    color: var(--text2);
     font-size: 1.125rem;
     line-height: 1.5;
     letter-spacing: -0.017em;
@@ -20,23 +21,23 @@
   }
 
   span{
-    color: rgb(70, 152, 254);
+    color: var(--accent);
     font-weight: 600;
   }
 
   .introTitle{
-    color: rgba(183, 215, 255, 0.803);
+    color: var(--pretext);
 
   }
 
   .discoverBtn {
-    background-color: rgba(255, 255, 255, 0.036);
+    background-color: #ffffff09;
     padding: 10px;
     padding-left: 10px;
     padding-right: 35px;
-    color: rgba(255, 255, 255, 0.797);
+    color: #ffffffcb;
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.17);
+    border: 1px solid #ffffff2b;
     font-weight: 500;
     position: relative; /* Necesario para el posicionamiento absoluto del icono */
     transition: background-color 0.3s ease; /* Transición suave para el fondo */

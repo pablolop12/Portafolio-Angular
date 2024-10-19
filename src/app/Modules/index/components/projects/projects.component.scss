@@ -1,0 +1,197 @@
+.seccionExperience {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+}
+
+body {
+    background-color: #0d0d2b;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.background-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0px 0px 20px;
+}
+
+.background-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    filter: blur(60px);
+    width: 800px;
+    height: 400px;
+    background: radial-gradient(circle, rgb(25, 93, 182), rgba(29, 37, 60, 0));
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(50px);
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.889);
+}
+
+p {
+    color: rgba(255, 255, 255, 0.648);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    letter-spacing: -0.017em;
+    font-weight: 400;
+}
+
+span {
+    color: rgb(70, 152, 254);
+    font-weight: 600;
+}
+
+.introTitle {
+    color: rgb(194, 236, 255);
+}
+
+.holder2 {
+    padding: 8px;
+    max-width: 355px;
+    margin-inline: auto;
+}
+
+.gitPrev {
+    background-color: #222222bb;
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+}
+
+/* BENTO PROJECTS */
+.holder {
+    padding: 8px;
+    max-width: 355px;
+}
+
+.bento {
+    background-color: #222222;
+    backdrop-filter: blur(4px);
+    border-radius: 8px 8px 0 0; /* Top corners rounded */
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project-image {
+    width: 100%;
+    min-width: 312px;
+    height: 100%;
+    background-color: red;
+    border-radius: 9px 9px 10px 10px; /* Top corners rounded */
+
+}
+
+.info-band {
+    background-color: #222222;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 8px 8px; /* Top corners rounded */
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.details {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 40px); /* Adjust the height to account for the info band height */
+    background-color: #222222;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: top 0.3s ease;
+    z-index: 1;
+
+}
+
+.bento.active .details {
+    top: 0;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.bento.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* Media Queries */
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .background-wrapper::before {
+        width: 800px;
+        height: 400px;
+        filter: blur(50px);
+        opacity: 1;
+    }
+}
+
+/* Medium devices (tablets, 768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .background-wrapper::before {
+        width: 600px;
+        height: 300px;
+        filter: blur(40px);
+        opacity: 0.8;
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .background-wrapper::before {
+        width: 400px;
+        height: 400px;
+        filter: blur(20px);
+        opacity: 0.8;
+    }
+
+    .background-wrapper {
+        padding: 30px 20px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .background-wrapper::before {
+        width: 400px;
+        height: 350px;
+        filter: blur(20px);
+        opacity: 0.7;
+    }
+
+    .background-wrapper {
+        padding: 30px 20px;
+    }
+}

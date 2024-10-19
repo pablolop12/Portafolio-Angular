@@ -16,6 +16,9 @@ import { PolygonSkillsComponent } from './components/polygon-skills/polygon-skil
 // Importar los módulos de Ng Zorro necesarios
 import { NzStepsModule } from 'ng-zorro-antd/steps';
 import { NzPopoverModule } from 'ng-zorro-antd/popover';
+import { ExpProgressComponent } from './components/exp-progress/exp-progress.component';
+import { GitprevComponent } from './components/gitprev/gitprev.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
@@ -33,6 +36,9 @@ const routes: Routes = [
     AboutComponent,
     ContactComponent,
     PolygonSkillsComponent,
+    ExpProgressComponent,
+    GitprevComponent,
+    FooterComponent,
 
   ],
   imports: [

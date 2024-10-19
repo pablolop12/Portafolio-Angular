@@ -1,0 +1,102 @@
+.imgHolder {
+    background-color: #0a080c;
+    border-radius: 8px 8px 0 0  ;
+    max-height: 130px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.content{
+    padding: 10px;
+}
+
+.avatar {
+    margin-left: 10px;
+    position: relative;
+    margin-top: 70px;
+    max-height: 120px;
+    border-radius: 50%;
+    border: 6px solid #1f1f1f;
+    /* Añade un borde de 5px con color azul */
+}
+
+.name{
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.login{
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.655);
+    margin-bottom: 10px;
+}
+
+.bio{
+    font-weight: 400;
+    font-size: 17px ;
+    color: rgba(255, 255, 255, 0.834);
+    margin-bottom: 10px;
+}
+
+.visitBtn{
+    background-color: #494c507b   ;
+    border: solid 1px rgba(255, 255, 255, 0.179);
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.897);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.followers{
+    font-size: 16px;
+    color:  rgba(255, 255, 255, 0.655);
+    font-weight: 300;
+
+    .number{
+        color: white !important;
+    }
+}
+
+.extras{
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    font-weight: 300;
+
+    i{
+        color: rgba(255, 255, 255, 0.655);  
+    }
+}
+
+.logoGit {
+    position: absolute;
+    font-size: 25px;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.74);
+    transition: color 0.1s ease-in-out;
+  }
+  
+  .logoGit:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+
+
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.link {
+    color: rgba(255, 255, 255, 0.104);
+}
