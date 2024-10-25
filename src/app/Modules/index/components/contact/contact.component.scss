@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    color: var(--text);
+    color: var(--text1);
 }
 
 
@@ -98,22 +98,51 @@
 
     input{
         margin-bottom: 0;
+        background-color: var(--input);
         width: 100%;
         border-radius: 0 5px 5px 0 !important;
         height: 100%;
         border: none;
         padding-left: 10px;
-        color: black;
+        color: var(--text1);
     }
 
     input:focus {
         outline: none; /* Remove default outline */
     }
 
+    ::placeholder {
+        color: var(--text1);
+        opacity: 1; /* Firefox */
+      }
+
+
   }
 
+  textarea {
+    border: none !important;
+    max-height: fit-content;
+    background-color: var(--bBg);
+    color: var(--text1);
+    overflow: auto;
+    outline: none !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+  }
+
+  textarea::placeholder {
+    color: var(--text1); 
+    opacity: 1;
+  }
+
+  textarea:focus { 
+    outline: none !important;
+    color: var(--text1);
+    background-color: var(--bBg);
+ }
+
   .xtra{
-    font-size: 19px;
     border-radius: 5px;
   }
 

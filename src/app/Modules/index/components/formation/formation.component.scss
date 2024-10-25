@@ -21,14 +21,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90px;
   padding: 10px;
   flex: 0 0 auto;
-
-  img{
-    filter: brightness(0) invert(1);
-    opacity: 0.8;
-  }
 }
 
 .text {
@@ -38,15 +32,21 @@
 }
 
 .text h1 {
-  font-size: 30px;
+  font-size: 25px;
+  margin-bottom: 3px;
 }
 
 .text h2 {
   font-size: 20px;
+  color: var(--accent);
 }
 
 .text h3 {
   font-size: 15px;
+}
+
+.date {
+  color: var(--date);
 }
 
 
@@ -56,6 +56,7 @@
 content: "";
 flex: 1;
 height: 1px;
+opacity: 0.4;
 background: var(--text2); //#eeeeee56
 }
 
@@ -84,3 +85,31 @@ width: 100%;
   border-radius: 5px;
   padding: 10px;
 }
+
+.svgV {
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  height: 80px;
+  margin-inline-end: 10px;
+  background-color: var(--text1); /* Aplica el color que desees */
+  -webkit-mask-image: url("../../../../../assets/vedruna_logo.svg"); /* Ruta al SVG */
+  mask-image: url("../../../../../assets/vedruna_logo.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  
+}
+
+.svgA {
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  height: 80px;
+  margin-inline-end: 10px;
+  background-color: var(--text1); /* Aplica el color que desees */
+  -webkit-mask-image: url("../../../../../assets/altair_logo.svg"); /* Ruta al SVG */
+  mask-image: url("../../../../../assets/altair_logo.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+

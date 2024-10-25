@@ -5,6 +5,10 @@
     color: var(--text1);
 }
 
+.extraInf{
+    flex-grow: 1;
+}
+
 
 .background-wrapper {
     position: relative;
@@ -55,9 +59,9 @@ span {
 }
 
 .holder2 {
-    padding: 8px;
+    padding-inline: 8px;
     max-width: 355px;
-    margin-inline: auto;
+     
 }
 
 .gitPrev {
@@ -66,79 +70,60 @@ span {
     border-radius: 8px;
 }
 
-/* BENTO PROJECTS */
-.holder {
-    padding: 8px;
-    max-width: 355px;
+.projectHolder{
+
+    
+    .contentB{
+        
+
+        h2{
+            font-weight: 500;
+            font-size: 27px;
+        }
+        .techBadge{
+            background-color: var(--badgeBack);
+            color: var(--badgeText);
+            padding: 4px 10px;
+            margin-inline-end: 10px;
+            border-radius: 50px;
+            font-weight: 400;
+        }
+
+        p{
+            padding-top: 10px;
+            
+        }
+
+    
+
+        .tryBtn{
+            background-color: var(--discoverBtnBg);
+            border: 1px solid var(--discoverBtnBrdr);
+            color: var(--text1);
+            margin-inline-end: 10px;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s ease; /* Transición suave para el fondo */
+            
+        }
+        .tryBtn:hover {
+            background-color: var(--discoverBtnHover);
+        }
+        
+        
+        
+    }
 }
 
-.bento {
-    background-color: #ff000000;
-    backdrop-filter: blur(4px);
-    border-radius: 8px 8px 0 0; /* Top corners rounded */
-    border-radius: 8px;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
 
-.project-image {
-    width: 100%;
-    min-width: 312px;
-    height: 100%;
-    background-color: red;
-    border-radius: 9px 9px 10px 10px; /* Top corners rounded */
 
-}
 
-.info-band {
-    background-color: var(--bento);
-    color: var(--text2);
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    border-radius: 0px 0px 8px 8px; /* Top corners rounded */
 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    z-index: 2;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
 
-.details {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 40px); /* Adjust the height to account for the info band height */
-    background-color: var(--bento);
-    color: var(--text1);
-    padding: 10px;
-    box-sizing: border-box;
-    transition: top 0.3s ease;
-    z-index: 1;
 
-}
 
-.bento.active .details {
-    top: 0;
-}
 
-.arrow {
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.bento.active .arrow {
-    transform: rotate(180deg);
-}
 
 /* Media Queries */
 /* Large devices (desktops, 1200px and up) */
@@ -188,3 +173,54 @@ span {
         padding: 30px 20px;
     }
 }
+
+.textToggle{
+    text-decoration: underline;
+    color: var(--text1);
+    animation: transform 0.5s ease;
+}
+
+.textToggle:hover{
+    color: var(--text2);
+}
+
+
+.extra-projects {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .extra-projects.expanded {
+    max-height: 1000px; /* Altura máxima arbitraria */
+    opacity: 1;
+  }
+
+/* Estilo para pantallas grandes (ancho mayor o igual a 1201px) */
+.project-image {
+    width: 350px;
+    height: 248px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Estilo para pantallas menores de 1201px */
+@media (max-width: 991.2px) {
+    .projectHolder {
+      flex-direction: column; /* En pantallas más pequeñas, imágenes y texto en columna */
+      align-items: center; /* Centra las imágenes y el contenido */
+    }
+  
+    .project-image {
+      width: 100%; /* Para que la imagen ocupe todo el ancho del contenedor */
+      max-width: 484px; /* Limitar el ancho a 400px */
+      height: 300px; /* Mantener la altura fija */
+      object-fit: cover; /* Mantiene la proporción de la imagen */
+    }
+  
+    .contentB {
+      text-align: center; /* Centra el contenido en pantallas más pequeñas */
+    }
+  }
+

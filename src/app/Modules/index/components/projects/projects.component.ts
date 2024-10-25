@@ -6,11 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
+  showMore = false;
 
-  toggleDetails(event: Event) {
-    const bento = (event.currentTarget as HTMLElement).closest('.bento');
-    if (bento) {
-      bento.classList.toggle('active');
-    }
+  toggleShowMore() {
+    this.showMore = !this.showMore;
   }
 }

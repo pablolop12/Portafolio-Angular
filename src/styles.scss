@@ -4,35 +4,35 @@
   --navVignette: #000000dc;
 
   //TEXTO ANIMADO
-  --tAnimado1: #0033cc;
-  --tAnimado2: #00c8ff;
-  --tAnimado3: #0066ff;
-  --tAnimado4: #00b7ff;
-  --tAnimado5: #0033cc;
+  --tAnimado1: #18ba36;
+  --tAnimado2: #15d67c;
+  --tAnimado3: #20c438;
+  --tAnimado4: #14d592;
+  --tAnimado5: #26e482;
 
   //TEXTOS RECURRENTES
   --text1: #ebebeb;
   --text2: #ffffffa5;
-  --accent: #4698fe;
-  --pretext: #b7d7ffcd;
+  --accent: #1cac55;
+  --pretext: #b7ffe2cd;
   --date: #ffffffa9;
   --external: #ffffff54;
 
 
   //BOTONES ACCIÓN
-  --bText: #70d0eb;
-  --bBg: #007db33f;
-  --bBgHover: #51b3dd3f;
-  --bClick: #02435f3f;
+  --bText: #22da78;
+  --bBg: #1cdc6c3f;
+  --bBgHover: #51dd903f;
+  --bClick: #025f2a3f;
 
-  --dispBg: #ffffff32;
+  --dispBg: #ffffff16;
 
   //POLYGON SKILLS
-  --line1: #9abbc6;
-  --line2: #6095a5;
-  --line3: #246f86;
-  --line4: #3b7ab0;
-  --line5: #9abbc6;
+  --line1: #7ae0ac;
+  --line2: #289b60;
+  --line3: #12b15f;
+  --line4: #00c850;
+  --line5: #69dea1;
 
   --discoverBtnBg: #ffffff09;
   --discoverBtnBrdr: #ffffff2b;
@@ -46,34 +46,40 @@
   --baseExp: #222222bb;
 
   //PROJECTS
-  --light: #195db6;
+  --light: #289b60;
   --gitprev: #222222;
   --gitText2: #ffffffa7;
   --bento: #222222;
+  --light: #289b60;
+
+  --badgeText:#a9fdd0ff;
+  --badgeBack:#1f4c33;
+  
 
 
   //BACKGROUND
   --background: #161616;
-  --cir0: #04abff;
-  --cir1: #0471ff;
-  --cir2: #0471ff;
-  --cir3: #048aff;
-  --cir4: #048aff67;
-  --cir5: #048aff1b;
+  --cir0: #161616;
+  --cir1: #161616;
+  --cir2: #161616;
+  --cir3: #161616;
+  --cir4: #161616;
+  --cir5: #161616 ;
 
-  --cirG1: #04e6ff;
-  --cirG2: #0471ff;
+  --cirG1: #4ca075;
+  --cirG2: #4ca075;
 
-  --cirG3: #00c3ff;
-  --cirG4: #00b7ff;
+  --cirG3: #4ca075;
+  --cirG4: #4ca075;
 
-  --cirG5: #0492ff;
-  --cirG6: #0471ff;
+  --cirG5: #4ca075;
+  --cirG6: #4ca075;
 
   //OTROS
   --badgeB: #ffffff1f; //Borde del badge experiencia/formación
   --badgeBg: #00000011; //Background del badge
   --footer: #00000057;
+  --input: #1cdc6c3f;
 }
 
 
@@ -92,7 +98,7 @@
   //TEXTOS RECURRENTES
   --text1: #272727;
   --text2: #1e1e1ea5;
-  --accent: #1b5935;
+  --accent: #069751;
   --pretext: #2c573e;
   --date: #000000a9;
   --external: #00000054;
@@ -114,7 +120,7 @@
 
   --discoverBtnBg: #19191909;
   --discoverBtnBrdr: #0000002b;
-  --discoverBtnHover: #0000008a;
+  --discoverBtnHover: #00000020;
   --discoverBtnActive: #ffffff04;
 
   //TRAYECTORIA
@@ -128,6 +134,9 @@
   --gitprev: #e2e2e2;
   --gitText2: #000000a7;
   --bento: #f3f3f3;
+
+  --badgeText:rgb(0, 54, 25);
+  --badgeBack:#017e3a58;
   
 
 
@@ -153,19 +162,13 @@
   --badgeB: #0000001f; //Borde del badge experiencia/formación
   --badgeBg: #ffffff4c; //Background del badge
   --footer: #0000000d;
+  --input: #17b4583f;
 }
 
 
 
 
-.crystal {
-  background-color: rgba(0, 0, 0, 0.567);
-  border: solid 1px rgba(255, 255, 255, 0.142);
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.82);
-  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.82);
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.82);
-}
+
 
 @font-face {
   font-family: "Frygia-Heavy";
@@ -257,9 +260,9 @@
 }
 
 ::selection {
-  //color: red !important;
+  color: var(--text1);
 
-  background: rgba(17, 108, 165, 0.529);
+  background: var(--bBg);
 
 }
 

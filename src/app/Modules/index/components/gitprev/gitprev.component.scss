@@ -77,12 +77,12 @@
     top: 5px;
     right: 5px;
     cursor: pointer;
-    color: var(--white);
+    color: rgba(255, 255, 255, 0.832);
     transition: color 0.1s ease-in-out;
   }
   
   .logoGit:hover {
-    color: var(--text1);
+    color: white;
   }
   
 

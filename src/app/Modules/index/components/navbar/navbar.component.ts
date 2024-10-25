@@ -8,6 +8,8 @@ import { ThemeService } from '../../../../services/theme.service';
 })
 export class NavbarComponent implements OnInit {
   currentSection: string = '';
+  isDarkTheme: boolean = true; // Por defecto, el tema oscuro (luna) está activado
+  isMenuCollapsed: boolean = true;  // Variable para controlar el estado del menú
 
   constructor(private themeService: ThemeService) {}
 
@@ -20,7 +22,7 @@ export class NavbarComponent implements OnInit {
   onWindowScroll(): void {
     const sections = document.querySelectorAll('app-profile, app-skills, app-experience, app-projects, app-about, app-contact');
     let currentSection = '';
-    const offset = window.innerHeight / 3;  // Adjust the offset value as needed
+    const offset = window.innerHeight / 3;
     sections.forEach((section: any) => {
       const rect = section.getBoundingClientRect();
       if (rect.top + offset < window.innerHeight && rect.bottom - offset > 0) {
@@ -52,5 +54,18 @@ export class NavbarComponent implements OnInit {
 
   toggleTheme() {
     this.themeService.toggleTheme();
+    this.isDarkTheme = !this.isDarkTheme;
+  }
+
+  // Método para alternar el estado del menú
+  toggleMenu() {
+    this.isMenuCollapsed = !this.isMenuCollapsed;
+
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    if (this.isMenuCollapsed) {
+      navbarToggler?.classList.add('collapsed');
+    } else {
+      navbarToggler?.classList.remove('collapsed');
+    }
   }
 }

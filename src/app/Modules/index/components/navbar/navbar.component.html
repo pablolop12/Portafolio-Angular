@@ -1,22 +1,21 @@
-<nav class="navbar navbar-expand-md fixed-top navbar-scroll ">
+<nav class="navbar navbar-expand-md fixed-top navbar-scroll">
   <div class="vignette"></div>
   <div class="container-fluid container">
-    
+
     <!-- LOGO -->
     <a class="navbar-brand me-5" href="#top">
       <img src="../../../../../assets/image.png" height="40px">
     </a>
 
     <!-- BOTON HAMBURGUESA -->
-    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-      aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()" [ngClass]="{'collapsed': isMenuCollapsed}" aria-expanded="!isMenuCollapsed" aria-label="Toggle navigation">
       <span class="toggler-icon top-bar"></span>
       <span class="toggler-icon middle-bar"></span>
       <span class="toggler-icon bottom-bar"></span>
     </button>
 
-    <!-- elementos del menu colapsable -->
-    <div class="collapse navbar-collapse " id="menu">
+    <!-- Elementos del menú colapsable -->
+    <div class="collapse navbar-collapse" id="menu" [ngClass]="{'show': !isMenuCollapsed}">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'skills' }">
           <a class="nav-link" href="#skills">Tecnologías</a>
@@ -28,12 +27,19 @@
           <a class="nav-link" href="#projects">Proyectos</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'about' }">
-          <a class="nav-link" href="#about">Sobre mí</a>
+          <a class="nav-link" href="#about">Pablo</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'contact' }">
           <a class="nav-link" href="#contact">Contacto</a>
         </li>
-        <button (click)="toggleTheme()">Modo Claro/Oscuro</button>
+
+        <!-- Botón de cambio de tema -->
+        <li class="nav-item">
+          <a class="nav-link" (click)="toggleTheme()">
+            <i *ngIf="isDarkTheme" class="bi bi-moon-fill icono"></i>
+            <i *ngIf="!isDarkTheme" class="bi bi-brightness-high-fill icono"></i>
+          </a>
+        </li>
       </ul>
     </div>
   </div>

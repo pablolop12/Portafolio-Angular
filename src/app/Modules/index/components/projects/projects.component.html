@@ -6,18 +6,20 @@
           <div class="col-lg-6">
             <p class="mb-0 introTitle text-center">Descubre mis trabajos</p>
             <h1 class="text-center">Algunos de mis proyectos</h1>
-            <p class="text-center">Estos son algunos de los proyectos que he hecho a lo largo de mi carrera como programador. 
-              Si quieres descubrir más, puedes echar un vistazo a mi perfil de <span>GitHub</span>, donde tengo mis demás repositorios.
+            <p class="text-center">
+              Estos son algunos de los proyectos que he hecho a lo largo de mi carrera como programador.
+              Si quieres descubrir más, puedes echar un vistazo a mi perfil de <span>GitHub</span>, donde tengo mis
+              demás repositorios.
             </p>
           </div>
         </div>
       </div>
-      <div class="baseContent mt-3">
-        <div class="row">
+      <div class="baseContent d-flex mt-5">
+        <div class="row" style="height: 100%;">
 
           <!-- Perfil de Github -->
-          <div class="col-lg-4">
-            <div class="holder2" style="max-width: 500px;">
+          <div class="col-lg-4 justify-content-center d-flex">
+            <div class="holder2 mb-5" style="max-width: 500px;">
               <div class="gitPrev ">
                 <app-gitprev></app-gitprev>
               </div>
@@ -25,57 +27,85 @@
           </div>
 
           <!-- Bento Boxes -->
-          <div class="col-lg-8">
-            <div class="bentoHolder d-flex flex-wrap h-100">
-              <div class="holder col-lg-6">
-                <div class="bento col-12">
-                  <div class="project-image">img</div>
-                  <div class="info-band" (click)="toggleDetails($event)">
-                    <p>Gestor de rutinas</p>
-                    <span class="arrow"><i class="bi bi-chevron-up"></i></span>
-                  </div>
-                  <div class="details">
-                    <p>Details about project 1...</p>
-                  </div>
+          <div class="col-lg-8 col-md-12">
+
+            <!-- Proyectos visibles inicialmente -->
+            <div class="projectHolder d-flex flex-lg-row flex-column mb-5">
+              <img src="https://via.placeholder.com/400x300" alt="Project Preview 3"
+                class="project-image img-fluid mb-3 mb-lg-0">
+              <div class="contentB px-3">
+                <h2>Gestor nutricional</h2>
+                <span class="techBadge">
+                  <i class="fa-brands fa-java me-1"></i>Java</span><span class="techBadge">
+                  <i class="fa-brands fa-angular me-1"></i>Angular</span>
+                <p>
+                  Aplicación para deportistas que permite el seguimiento diario de valores nutricionales. Calcula
+                  automáticamente los macronutrientes objetivo de cada usuario. </p>
+                <a class="tryBtn"><i class="fa-solid fa-code me-1"></i>Código</a>
+                <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
+              </div>
+            </div>
+
+            <div class="projectHolder d-flex flex-lg-row flex-column mb-5">
+              <img src="https://via.placeholder.com/400x300" alt="Project Preview 3"
+                class="project-image img-fluid mb-3 mb-lg-0">
+              <div class="contentB px-3">
+                <h2>Librería de recursos</h2>
+                <span class="techBadge">
+                  <i class="fa-brands fa-angular me-1"></i>Angular
+                </span>
+                <p>
+                  Librería de recursos HTML-CSS personal donde publico elementos de diseño Front-End que uso
+                  recurrentemente en mis proyectos personales.
+                </p>
+                <a class="tryBtn"><i class="fa-solid fa-code me-1"></i>Código</a>
+                <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
+              </div>
+            </div>
+
+            <!-- Proyectos ocultos inicialmente -->
+            <div class="extra-projects" [ngClass]="{'expanded': showMore}">
+              <div class="projectHolder d-flex flex-lg-row flex-column mb-5">
+                <img src="https://via.placeholder.com/400x300" alt="Project Preview 3"
+                  class="project-image img-fluid mb-3 mb-lg-0">
+                <div class="contentB px-3">
+                  <h2>Proyecto adicional 1</h2>
+                  <span class="techBadge">
+                    <i class="fa-brands fa-java me-1"></i>Java</span><span class="techBadge">
+                    <i class="fa-brands fa-angular me-1"></i>Angular</span>
+                  <p>
+                    Este es un proyecto de placeholder adicional para mostrar la funcionalidad del botón "Mostrar más".
+                  </p>
+                  <a class="tryBtn"><i class="fa-solid fa-code me-1"></i>Código</a>
+                  <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
                 </div>
               </div>
-              <div class="holder col-6">
-                <div class="bento col-lg-12">
-                  <img src="https://via.placeholder.com/400x300" alt="Project Preview 2" class="project-image">
-                  <div class="info-band" (click)="toggleDetails($event)">
-                    <p>Tracker nutricional</p>
-                    <span class="arrow"><i class="bi bi-chevron-up"></i></span>
-                  </div>
-                  <div class="details">
-                    <p>Details about project 2...</p>
-                  </div>
-                </div>
-              </div>
-              <div class="holder col-6">
-                <div class="bento col-lg-12">
-                  <img src="https://via.placeholder.com/400x300" alt="Project Preview 3" class="project-image">
-                  <div class="info-band" (click)="toggleDetails($event)">
-                    <p>Gestión de incidencias</p>
-                    <span class="arrow"><i class="bi bi-chevron-up"></i></span>
-                  </div>
-                  <div class="details">
-                    <p>Details about project 3...</p>
-                  </div>
-                </div>
-              </div>
-              <div class="holder col-6">
-                <div class="bento col-lg-12">
-                  <img src="https://via.placeholder.com/400x300" alt="Project Preview 4" class="project-image">
-                  <div class="info-band" (click)="toggleDetails($event)">
-                    <p>Gestor de incidencias</p>
-                    <span class="arrow"><i class="bi bi-chevron-up"></i></span>
-                  </div>
-                  <div class="details">
-                    <p>Details about project 4...</p>
-                  </div>
+
+              <div class="projectHolder d-flex flex-lg-row flex-column mb-5">
+                <img src="https://via.placeholder.com/400x300" alt="Project Preview 3"
+                  class="project-image img-fluid mb-3 mb-lg-0">
+                <div class="contentB px-3">
+                  <h2>Proyecto adicional 2</h2>
+                  <span class="techBadge">
+                    <i class="fa-brands fa-angular me-1"></i>Angular
+                  </span>
+                  <p>
+                    Este es otro proyecto de placeholder adicional para el despliegue con animación.
+                  </p>
+                  <a class="tryBtn"><i class="fa-solid fa-code me-1"></i>Código</a>
+                  <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
                 </div>
               </div>
             </div>
+
+            <!-- Botón para mostrar más proyectos -->
+            <div class="text-center">
+              <a class="textToggle" (click)="toggleShowMore()">
+                {{ showMore ? 'Mostrar menos proyectos' : 'Mostrar más proyectos' }}
+                <i class="fa ms-2" [ngClass]="showMore ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+              </a>
+            </div>
+
           </div>
 
         </div>
