@@ -1,175 +1,202 @@
-.container {
-  position: relative;
-  display: inline-block; /* Para que el tamaño del contenedor se ajuste al contenido */
-}
+  /*
+  SCSS de: Componente Polygon Skills
+  @Autor: Pablo López Luján
+          github.com/pablolop12
+  */
 
-
-
-.table-container2 {
-  border-collapse: collapse; /* Combina los bordes para que se vean como una sola línea */
-  position: absolute;
-  z-index: 30;
-  top: -1px; /* Mueve el elemento 1px hacia arriba */
-}
-
-
-.table-container2 td {
-  height: 100px; /* Altura de las celdas */
-  width: 100px; /* Ancho de las celdas */
-  border: 2px solid #46464600; /* Líneas interiores en verde de 2px de grueso */
-  padding: 0; /* Quita el padding para asegurar la altura y ancho fijo */
-}
-
-.vignette1{
-  -webkit-box-shadow: inset 0px 0px 15px 20px var(--background);
-  -moz-box-shadow: inset 0px 0px 15px 20px var(--background);
-  box-shadow: inset 0px 0px 15px 20px var(--background);
-  position: absolute;
-  height: 100%;
-  width: 420px;
-  z-index: 10;
-  pointer-events: none;
-}
-
-
-.table-container {
-  border-collapse: collapse; /* Combina los bordes para que se vean como una sola línea */
-  position: relative; /* Necesario para que los pseudoelementos de sombreado se posicionen correctamente */
-  z-index: 1; /* Asegura que la tabla esté sobre las sombras */
-}
-
-.table-container td {
-  height: 100px; /* Altura de las celdas */
-  width: 100px; /* Ancho de las celdas */
-  border: 3px solid #00baf3; /* Líneas interiores en verde de 2px de grueso */
-  padding: 0; /* Quita el padding para asegurar la altura y ancho fijo */
-  animation: borderColorChange 4s infinite; /* Aplica la animación */
-}
-
-.table-container tr:first-child td {
-  border-top: none; /* Elimina el borde superior de la primera fila */
-}
-
-.table-container tr:last-child td {
-  border-bottom: none; /* Elimina el borde inferior de la última fila */
-}
-
-.table-container tr td:first-child {
-  border-left: none; /* Elimina el borde izquierdo de la primera columna */
-}
-
-.table-container tr td:last-child {
-  border-right: none; /* Elimina el borde derecho de la última columna */
-}
-
-.cell {
-  background-color: rgba(255, 0, 0, 0);
-  padding: 5px;
-  height: 98px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10000;
-}
-
-
-
-
-
-.cell2 {
-  background-color: rgba(128, 0, 128, 0);
-  padding: 5px;
-  height: 100px;
-  width: 206px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-}
-
-
-
-
-//BOX TABLE
-
-.skill{
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 10px;
-  padding: 8px;
-  height: 100%;
-  width: 100%;
-}
-
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
+  /* Contenedor base del componente */
+  .container {
+    position: relative;
+    display: inline-block;
   }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-@keyframes float2 {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-}
-
-@keyframes float3 {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-7px);
-  }
-}
-
-@keyframes float4 {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
-
-.img-float1 {
-  animation: float 4s ease-in-out infinite;
-}
-
-.img-float2 {
-  animation: float2 5s ease-in-out infinite;
-}
-
-.img-float3 {
-  animation: float3 3.5s ease-in-out infinite;
-}
-
-.img-float4 {
-  animation: float4 4.5s ease-in-out infinite;
-}
 
 
-@keyframes borderColorChange {
-  0% {
-    border-color: var(--line1);
+  /* Contenedor de la tabla secundaria */
+  .table-container2 {
+    border-collapse: collapse;
+    position: absolute;
+    z-index: 30;
+    top: -1px;
   }
-  25% {
-    border-color: var(--line2);
-  }
-  50% {
-    border-color: var(--line3);
-  }
-  75% {
-    border-color: var(--line4);
-  }
-  100% {
-    border-color: var(--line5);
-  }
-}
 
+  /* Estilo para las celdas */
+  .table-container2 td {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #46464600;
+    padding: 0;
+  }
+
+  /* Efecto vignette que difumina los bordes de la tabla */
+  .vignette1 {
+    -webkit-box-shadow: inset 0px 0px 15px 20px var(--background);
+    -moz-box-shadow: inset 0px 0px 15px 20px var(--background);
+    box-shadow: inset 0px 0px 15px 20px var(--background);
+    position: absolute;
+    height: 100%;
+    width: 420px;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  /* Contenedor de tabla */
+  .table-container {
+    border-collapse: collapse;
+    position: relative;
+    z-index: 1;
+  }
+
+  .table-container td {
+    height: 100px;
+    width: 100px;
+    border: 3px solid;
+    padding: 0;
+    animation: borderColorChange 4s infinite;
+  }
+
+  /* Eliminación de bordes */
+  .table-container tr:first-child td {
+    border-top: none;
+    /* Elimina el borde superior de la primera fila */
+  }
+
+  .table-container tr:last-child td {
+    border-bottom: none;
+    /* Elimina el borde inferior de la última fila */
+  }
+
+  .table-container tr td:first-child {
+    border-left: none;
+    /* Elimina el borde izquierdo de la primera columna */
+  }
+
+  .table-container tr td:last-child {
+    border-right: none;
+    /* Elimina el borde derecho de la última columna */
+  }
+
+  /* Estilo de celda */
+  .cell {
+    background-color: rgba(255, 0, 0, 0);
+    padding: 5px;
+    height: 98px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+
+
+  /* Estilo de celda 2 */
+  .cell2 {
+    background-color: rgba(128, 0, 128, 0);
+    padding: 5px;
+    height: 100px;
+    width: 206px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+
+
+
+
+/* Estilo de SKILLS y ANIMACIONES de flotar */
+
+  .skill {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  @keyframes float2 {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  @keyframes float3 {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-7px);
+    }
+  }
+
+  @keyframes float4 {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .img-float1 {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .img-float2 {
+    animation: float2 5s ease-in-out infinite;
+  }
+
+  .img-float3 {
+    animation: float3 3.5s ease-in-out infinite;
+  }
+
+  .img-float4 {
+    animation: float4 4.5s ease-in-out infinite;
+  }
+
+
+  @keyframes borderColorChange {
+    0% {
+      border-color: var(--line1);
+    }
+
+    25% {
+      border-color: var(--line2);
+    }
+
+    50% {
+      border-color: var(--line3);
+    }
+
+    75% {
+      border-color: var(--line4);
+    }
+
+    100% {
+      border-color: var(--line5);
+    }
+  }

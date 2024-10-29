@@ -7,14 +7,14 @@
       <img src="../../../../../assets/image.png" height="40px">
     </a>
 
-    <!-- BOTÓN HAMBURGUESA -->
+    <!-- BOTÓN HAMBURGUESA (Menú colapsable) -->
     <button class="navbar-toggler" type="button" (click)="toggleMenu()" [ngClass]="{'collapsed': isMenuCollapsed}" aria-expanded="!isMenuCollapsed" aria-label="Toggle navigation">
       <span class="toggler-icon top-bar"></span>
       <span class="toggler-icon middle-bar"></span>
       <span class="toggler-icon bottom-bar"></span>
     </button>
 
-    <!-- Elementos del menú colapsable -->
+    <!-- Elementos del menú -->
     <div class="collapse navbar-collapse" id="menu" [ngClass]="{'show': !isMenuCollapsed}">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'skills' }">

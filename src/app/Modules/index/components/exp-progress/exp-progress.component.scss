@@ -1,10 +1,92 @@
-.timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px 0;
-  list-style-type: none;
-}
+  /*
+  SCSS de: Componente Exp-Progress
+  @Autor: Pablo López Luján
+          github.com/pablolop12
+  */
+
+  /* Contenedor base del componente */
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    list-style-type: none;
+  }
+
+  /* Estructura de un item del timeline */
+  .timeline-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+
+  /* Estilo para Marcadores (Bolas) Del timeline */
+  .timeline-marker {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    flex-shrink: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--text1);
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+
+  /* Estilo de la linea vertical del timeline */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25px;
+    /* Ajusta la posición de la línea central */
+    bottom: 0;
+    width: 1.5px;
+    background: linear-gradient(180deg, var(--tl1) 0%, var(--tl2) 4%, var(--tl2) 96%, var(--tl1) 100%);
+    z-index: -1;
+  }
+
+  /* Elementos referidos al texto de cada bloque del timeline */
+  .timeline-details {
+    position: relative;
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .timeline-description {
+    flex: 2;
+  }
+
+  .company {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .role {
+    font-size: 22px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .date {
+    color: var(--date);
+  }
+
+
+  .highlight {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .external {
+    font-size: 16px;
+    margin-left: 4px;
+    color: var(--external);
+  }
 
 .timeline-item {
   position: relative;

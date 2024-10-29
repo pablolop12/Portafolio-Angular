@@ -1,12 +1,12 @@
-.seccionSkills {
-    overflow: hidden;
-    z-index: 1;
+  /*
+  SCSS de: Componente Skills
 
-    
-    color: white;
-  }
+  @Autor: Pablo López Luján
+          github.com/pablolop12
+  */
 
 
+  /* Estilos para el texto */
   h1{
     font-weight: 800;
     color: var(--text1);
@@ -30,41 +30,4 @@
 
   }
 
-  .discoverBtn {
-    background-color: var(--discoverBtnBg);
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: var(--text1);
-    border-radius: 5px;
-    border: 1px solid var(--discoverBtnBrdr);
-    font-weight: 500;
-    position: relative; 
-    transition: background-color 0.3s ease; /* Transición suave para el fondo */
-}
-
-.discoverBtn:hover {
-    background-color: var(--discoverBtnHover); /* Fondo más claro al hacer hover */
-}
-
-
-.discoverBtn:active {
-  transform: scale(0.95); /* Reduce ligeramente el tamaño del botón al hacer clic */
-  transition: ease-in-out 0.06s;
-  background-color: var(--discoverBtnActive); /* Fondo más claro al hacer hover */
-}
-
-
-.extra-projects {
-  padding-top: 50px;
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
-}
-
-.extra-projects.expanded {
-  max-height: 1500px; /* Altura máxima arbitraria */
-  opacity: 1;
-}
 

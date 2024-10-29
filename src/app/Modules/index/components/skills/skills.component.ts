@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
   alertVisible = false;
   
-  showMore = false;
+
 
   // Función para mostrar la alerta con animación
   showAlert() {
@@ -23,10 +23,6 @@ export class SkillsComponent {
     }, 10);
   }
 
-
-  toggleShowMore() {
-    this.showMore = !this.showMore;
-  }
 
   // Función para cerrar la alerta con animación
   closeAlert() {

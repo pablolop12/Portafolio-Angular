@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
   constructor(private themeService: ThemeService) {}
 
   ngOnInit(): void {
-    this.updateNavbar();
+
     this.onWindowScroll();
   }
 
@@ -30,27 +30,15 @@ export class NavbarComponent implements OnInit {
       }
     });
     this.currentSection = currentSection;
-    this.updateNavbar();
+
   }
 
   @HostListener('window:resize', [])
   onWindowResize(): void {
-    this.updateNavbar();
+ 
   }
 
-  private updateNavbar(): void {
-    const navbar = document.querySelector('.navbar');
-    const scrollPosition = window.scrollY;
-    const isSmallScreen = window.innerWidth <= 768;
 
-    if (!isSmallScreen && scrollPosition === 0) {
-      navbar?.classList.add('navbar-transparent');
-      navbar?.classList.remove('navbar-black');
-    } else {
-      navbar?.classList.add('navbar-black');
-      navbar?.classList.remove('navbar-transparent');
-    }
-  }
 
   toggleTheme() {
     this.themeService.toggleTheme();

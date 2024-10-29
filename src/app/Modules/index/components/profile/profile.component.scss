@@ -1,225 +1,235 @@
-.seccionIntro { //Estructura (contenedor) de la sección de presentación
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
+  /*
+  SCSS de: Componente Profile
 
-.scrollIncent{ //Animación que incentiva al scroll hacia abajo
-  position: absolute;
-  bottom: -50%;
-  left: 50%;
-  transform: translate(-50%, -0%);
-  color: var(--text1);
-}
-
-.scrollIncent span {
-  display: block;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
-}
+  @Autor: Pablo López Luján
+          github.com/pablolop12
+  */
 
 
-
-.nombre-animado {
-  font-family: Frygia-Heavy;
-  background: -webkit-linear-gradient(0deg, var(--tAnimado1), var(--tAnimado2), var(--tAnimado3), var(--tAnimado4), var(--tAnimado5));
-  background-size: 400%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animacion 5s linear infinite;
-}
-
-@keyframes animacion {
-  0% {
-    background-position: 0%;
+  /* DIV Base 100vh (ocupa toda la pantalla) */
+  .seccionIntro {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
   }
 
-  50% {
-    background-position: 100%;
+  /* Clase para añadir animación de nombre colorido */
+  .nombre-animado {
+    font-family: Frygia-Heavy;
+    background: -webkit-linear-gradient(0deg, var(--tAnimado1), var(--tAnimado2), var(--tAnimado3), var(--tAnimado4), var(--tAnimado5));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animacion 5s linear infinite;
   }
 
-  100% {
-    background-position: 0%;
-  }
-}
-
-.text-semi {
-  color: var(--text1);
-}
-
-.text-semi2 {
-  color: var(--bText);
-}
-
-.text-semi3 {
-  color: var(--text1);
-}
-
-
-
-.introTexto {
-  position: relative;
-  z-index: 1;
-}
-
-.introText {
-  font-weight: 400;
-  font-size: 25px;
-  margin: none;
-}
-
-.bigText {
-  font-weight: 900;
-  font-size: 85px;
-  margin: none;
-}
-
-
-
-.secondaryText {
-  font-weight: 500;
-  font-size: 25px;
-  margin: none;
-}
-
-.bloqueContacto .secondaryText {
-  font-weight: 400;
-  font-size: 25px;
-  margin: none;
-}
-
-.linkHolder {
-  text-decoration: none;
-  padding: 5px;
-  padding-inline: 10px;
-  border-radius: 15px;
-  //border: #0052cc solid 1px;
-  background-color: var(--bBg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.1s ease-in-out;
-}
-
-.linkHolder:hover {
-  background-color: var(--bBgHover);
-}
-
-.linkHolder:active{
-  transform: scale(0.95); /* Reduce ligeramente el tamaño del botón al hacer clic */
-  transition: ease-in-out 0.06  s;
-  background-color: var(--bClick);
-}
-
-.btnDescarga {
-  /* Estilos para el botón de descarga si es necesario */
-}
-.disponibilidad {
-  background-color: var(--dispBg);
-  color: var(--text1);
-  padding: 4px;
-  width: fit-content;
-  text-decoration: none;
-  padding-inline: 10px;
-  border-radius: 4px;
-  transition: transform 0.2s ease-in-out; /* Añadir transición suave */
-}
-
-.disponibilidad:hover {
-  transform: scale(1.1); /* Agrandar el botón un 10% al hacer hover */
-}
-
-
-
-
-.disponibilidad .dot2 {
-  background-color: rgb(0, 252, 0);
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 5px rgba(0, 252, 0, 0.6);
+  /* Texto secundario (Color primario) */
+  .text-semi {
+    color: var(--text1);
   }
 
-  5% {
-    transform: scale(1.2);
-    box-shadow: 0 0 10px rgba(0, 252, 0, 0.8);
+
+  /* Boton verde de acción */
+  .text-semi2 {
+    color: var(--bText);
   }
 
-  10% {
-    transform: scale(1);
-    box-shadow: 0 0 5px rgba(0, 252, 0, 0.6);
+  .linkHolder {
+    text-decoration: none;
+    padding: 5px;
+    padding-inline: 10px;
+    border-radius: 15px;
+    background-color: var(--bBg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.1s ease-in-out;
   }
 
-  15% {
-    transform: scale(1.2);
-    box-shadow: 0 0 10px rgba(0, 252, 0, 0.8);
+  .linkHolder:hover {
+    background-color: var(--bBgHover);
   }
 
-  20% {
-    transform: scale(1);
-    box-shadow: 0 0 5px rgba(0, 252, 0, 0.6);
+  .linkHolder:active {
+    transform: scale(0.95);
+    transition: ease-in-out 0.06 s;
+    background-color: var(--bClick);
   }
 
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 5px rgba(0, 252, 0, 0.6);
-  }
-}
-
-//ANIMACION ESCRIBIR:
-.typing {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 24px;
-  animation: typing 1s steps(10, end), blink-caret .75s step-end infinite;
-  padding-right: 0.2em;
-  /* Ajusta este valor para separar más la línea del texto */
-}
-
-@keyframes typing {
-  from {
-    width: 0
+  /* Texto nombre (Pablo López Luján) */
+  .bigText {
+    font-weight: 900;
+    font-size: 85px;
+    margin: none;
   }
 
-  to {
-    width: 6ch;
+
+  /* Texto secundairo "Desarrollador Full-Stack ..." */
+  .secondaryText {
+    font-weight: 500;
+    font-size: 25px;
+    margin: none;
   }
 
-  /* Ajusta el valor de acuerdo a la longitud del texto */
-}
-
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent
+  /* Alert Disponibilidad */
+  .disponibilidad {
+    background-color: var(--dispBg);
+    color: var(--text1);
+    padding: 4px;
+    width: fit-content;
+    text-decoration: none;
+    padding-inline: 10px;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out;
   }
 
-  50% {
-    border-color: var(--text1);
+  .disponibilidad:hover {
+    transform: scale(1.1);
   }
-}
+
+  .disponibilidad .dot2 {
+    background-color: rgb(0, 252, 0);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    animation: pulse 2s infinite;
+  }
+
+
+
+  /* Animación para incentivar el Scroll */
+  .scrollIncent {
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    color: var(--text1);
+  }
+
+  .scrollIncent span {
+    display: block;
+    animation: bounce 2s infinite;
+  }
+
+
+  /* Estilos Texto Typing "Hola soy..." */
+  .typing {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 24px;
+    animation: typing 1s steps(10, end), blink-caret .75s step-end infinite;
+    padding-right: 0.2em;
+  }
+
+
+
+  /* ANIMACIONES:  
+
+  - Nombre animado (animacion)
+  - Disponibilidad (pulse)
+  - Incentivar Scroll (bounce)
+  - Escritura 1 (typing)
+  - Escritura 2 (blink-caret)
+  */
+
+  @keyframes animacion {
+
+    //Animación para el nombre colorido
+    0% {
+      background-position: 0%;
+    }
+
+    50% {
+      background-position: 100%;
+    }
+
+    100% {
+      background-position: 0%;
+    }
+  }
+
+  @keyframes pulse {
+
+    //Animación para el circulo pulsaciones disponibilidad
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 5px rgba(0, 252, 0, 0.6);
+    }
+
+    5% {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px rgba(0, 252, 0, 0.8);
+    }
+
+    10% {
+      transform: scale(1);
+      box-shadow: 0 0 5px rgba(0, 252, 0, 0.6);
+    }
+
+    15% {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px rgba(0, 252, 0, 0.8);
+    }
+
+    20% {
+      transform: scale(1);
+      box-shadow: 0 0 5px rgba(0, 252, 0, 0.6);
+    }
+
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 5px rgba(0, 252, 0, 0.6);
+    }
+  }
+
+  @keyframes bounce {
+    //Animación Bounce incentivar Scroll
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-20px);
+    }
+
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes typing {
+
+    //Animación de escritura letra letra
+    from {
+      width: 0
+    }
+
+    to {
+      width: 6ch;
+    }
+  }
+
+  @keyframes blink-caret {
+    //Amimación de Caret que parpadea
+
+    from,
+    to {
+      border-color: transparent
+    }
+
+    50% {
+      border-color: var(--text1);
+    }
+  }

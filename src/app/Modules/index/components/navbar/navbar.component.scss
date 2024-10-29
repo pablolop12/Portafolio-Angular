@@ -1,80 +1,59 @@
   /*
-  SCSS de: Navbar
-
-  # Diseño
-  # Estructura
+  SCSS de: Componente Navbar
 
   @Autor: Pablo López Luján
           github.com/pablolop12
   */
 
-
-
+  //Efecto "Vignette" añade oscuridad en el TOP del Navbar
   .vignette {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    -webkit-box-shadow: inset 0px 200px 53px -102px var(--navVignette);
-    -moz-box-shadow: inset 0px 200px 53px -102px var(--navVignette);
     box-shadow: inset 0px 180px 53px -102px var(--navVignette);
     z-index: -1;
     pointer-events: none;
 
-  } 
-
-
-
-
-
-
-  .navbar-transparent {
-    background-color: transparent;
-    transition: background-color 0.5s ease-in-out;
   }
 
-
-
-
+  //Estilos para los elementos (Enlaces y botones) del Navbar
   .nav-item {
     .nav-link {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-right: 10px;
-      transition: transform 0.3s ease-in-out; /* Asegúrate de aplicar transition a transform */
-  
-      &:hover {
-        transform: scale(1.1); /* El escalado que se aplicará */
-      }
-  
-      i {
-        font-size: 24px;
-        transition: transform 0.3s ease-in-out; /* Para que los íconos también escalen suavemente */
-      }
+      transition: transform 0.3s ease-in-out;
     }
   }
-  
+
+  //Estilos concretos links NavBar
   .nav-link {
     color: var(--text1);
     font-size: 18px;
     font-weight: 500;
     padding-left: 40px;
   }
-  
 
-
-
-
-
-
-
-  /*ESTRUCTURA*/
-  .navbar-toggler {
-    border: 0 !important;
+  //Estilos para Icono (Tema changer)
+  .icono {
+    font-size: 17px !important;
   }
 
+
+
+  /*
+  Estilos para BOTON HAMBURGUESA
+
+  - Reset de estilos
+  - Spacing Lineas Hamburguesa
+  - Estilos X 
+  - Animaciones del botón
+  */
+
+  /* Reset de estilo para el botón Hamburguesa del Navbar tamaño pequeño */
   .navbar-toggler:focus,
   .navbar-toggler:active,
   .navbar-toggler-icon:focus {
@@ -83,7 +62,12 @@
     border: 0 !important;
   }
 
-  /* Lines of the Toggler */
+  /*  Espacio entre las lineas botón Hamburguesa */
+  .middle-bar {
+    margin: 5px auto;
+  }
+
+  /* Estilos X */
   .toggler-icon {
     width: 30px;
     height: 3px;
@@ -92,12 +76,7 @@
     transition: all 0.2s;
   }
 
-  /* Adds Space between the lines */
-  .middle-bar {
-    margin: 5px auto;
-  }
-
-  /* State when navbar is opened (START) */
+  /* Animaciones del botón */
   .navbar-toggler .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
@@ -113,9 +92,6 @@
     transform-origin: 10% 90%;
   }
 
-  /* State when navbar is opened (END) */
-
-  /* State when navbar is collapsed (START) */
   .navbar-toggler.collapsed .top-bar {
     transform: rotate(0);
   }
@@ -130,36 +106,30 @@
   }
 
 
-  .navbar-toggler.collapsed .toggler-icon {
-    background-color: var(--accent);
+/* Colores Y Hover */
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: var(--accent);
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: var(--accent);
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: color 0.3s ease, font-weight 0.3s ease, transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+
   }
+}
 
-  .navbar-nav .nav-item.active .nav-link {
-    color: var(--accent); 
-  }
-  
-  .navbar-nav .nav-item .nav-link {
-    transition: color 0.3s ease, font-weight 0.3s ease, transform 0.3s ease-in-out; /* Añadido transform para que también se anime */
-    
-    &:hover {
-      transform: scale(1.1); /* Escalado suave al hacer hover */
-    }
-  }
-  
-
-
-
-  //MEDIA-QUERIES
+  /* Media query para navbar tamano pequeño */
   @media (max-width: 767.98px) {
     .navbar {
-        
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.564);
-        backdrop-filter: blur(7px);
-        -webkit-backdrop-filter: blur(5.5px);
-        transition: background-color 0.2s ease-in-out;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.564);
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(5.5px);
+      transition: background-color 0.2s ease-in-out;
     }
-  }
-
-  .icono{
-    font-size: 17px !important;
   }

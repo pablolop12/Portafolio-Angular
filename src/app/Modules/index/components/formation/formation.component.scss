@@ -1,159 +1,160 @@
-.formation1{
-  padding: 10px;
-}
-.formation2{
-  padding: 5px;
-}
+  /*
+  SCSS de: Componente Formation
+  @Autor: Pablo López Luján
+          github.com/pablolop12
+  */
 
-.formationBox {
-  margin-bottom: 10px;
-  background-color: var(--formationBox);
-  border-radius: 5px;
-}
-
-.formationHolder {
-  width: 100%;
-  display: flex;
-  align-items: stretch; /* Ensure children elements stretch to the same height */
-}
-
-.img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  flex: 0 0 auto;
-}
-
-.text {
-  padding: 5px;
-  //padding-right: 10px;
-  flex: 1; /* Allow text to take remaining space */
-}
-
-.text h1 {
-  font-size: 25px;
-  margin-bottom: 3px;
-}
-
-.text h2 {
-  font-size: 20px;
-  color: var(--accent);
-}
-
-.text h3 {
-  font-size: 15px;
-}
-
-.date {
-  color: var(--date);
-}
-
-
-//Divisor
-.divider:after,
-.divider:before {
-content: "";
-flex: 1;
-height: 1px;
-opacity: 0.4;
-background: var(--text2); //#eeeeee56
-}
-
-.extrasContainer {
-display: flex;
-height: 100%;
-width: 100%;
-}
-
-.eHolder {
-  width: 33.33%;
-  height: 100%;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-
-.svgV {
-  width: 80px; /* Ajusta el tamaño según sea necesario */
-  height: 80px;
-  margin-inline-end: 10px;
-  background-color: var(--text1); /* Aplica el color que desees */
-  -webkit-mask-image: url("../../../../../assets/vedruna_logo.svg"); /* Ruta al SVG */
-  mask-image: url("../../../../../assets/vedruna_logo.svg");
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  
-}
-
-.svgA {
-  width: 80px; /* Ajusta el tamaño según sea necesario */
-  height: 80px;
-  margin-inline-end: 10px;
-  background-color: var(--text1); /* Aplica el color que desees */
-  -webkit-mask-image: url("../../../../../assets/altair_logo.svg"); /* Ruta al SVG */
-  mask-image: url("../../../../../assets/altair_logo.svg");
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.techSq {
-  background-color: #303030;  
-  overflow: hidden;
-  color: rgb(255, 204, 0);
-  border-radius: 10px;
-  width: 80px;
-  min-width: 80px;
-  height: 80px;
-  font-size: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative; /* Necesario para el pseudo-elemento */
-
-  i {
-    text-shadow: 1px 4px 2px #0000001e;
+  /* Contenedor del componente */
+  .container-formation {
+    padding: 10px;
   }
-}
 
-.techSq::before {
-  content: '';
-  position: absolute;
-  top: -1px;
-  left: -0.5px;
-  right: -1px;
-  bottom: -1px;
-  box-shadow: 0px 15px 34px -8px rgba(0, 0, 0, 0.16);
+  /* Estilo para las cajas de educacion institucional */
+  .formationBox {
+    margin-bottom: 10px;
+    background-color: var(--formationBox);
+    border-radius: 5px;
+  }
 
-  border-radius: 10px; /* Ajusta el radio para que coincida con el de .techSq */
-  background: linear-gradient(0deg, rgb(48, 48, 48) 0%, rgb(48, 48, 48) 50%, rgba(255, 255, 255, 0.145) 100%);
-  z-index: -1; /* Coloca el gradiente detrás del contenido */
-}
+  /* Estructura de las cajas */
+  .formationHolder {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+  }
 
-.scroll-container {
-  display: flex;
-  overflow-x: auto; /* Habilita el scroll horizontal */
-  white-space: nowrap; /* Evita que los elementos bajen de línea */
-  
-}
+  .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex: 0 0 auto;
+  }
 
-.scroll-container::-webkit-scrollbar {
-  height: 7px; /* Tamaño del scroll horizontal */
-}
+  /* Estilo para los elementos de cada educación */
+  .text {
+    padding: 5px;
+    flex: 1;
+  }
 
-.scroll-container::-webkit-scrollbar-thumb {
-  background-color: var(--scrollBar); /* Color del scroll */
-  border-radius: 4px;
-}
-.scroll-container::-webkit-scrollbar-track {
-  background-color: var(--scrollBg);
-  border-radius: 4px;
-}
+  .text h1 {
+    font-size: 25px;
+    margin-bottom: 3px;
+  }
 
-.scroll-container::-webkit-scrollbar-thumb:hover {
-  background-color: var(--scrollBarHover); /* Color del scroll al hacer hover */
-}
+  .text h2 {
+    font-size: 20px;
+    color: var(--accent);
+  }
+
+  .text h3 {
+    font-size: 15px;
+  }
+
+  .date {
+    color: var(--date);
+  }
+
+
+  /* Divisor de educaciones */
+  .divider:after,
+  .divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    opacity: 0.4;
+    background: var(--text2);
+  }
+
+  .extrasContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  .eHolder {
+    width: 33.33%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  /* SVG Vedruna Logo */
+  .svgV {
+    width: 80px;
+    height: 80px;
+    margin-inline-end: 10px;
+    background-color: var(--text1);
+    -webkit-mask-image: url("../../../../../assets/vedruna_logo.svg");
+    mask-image: url("../../../../../assets/vedruna_logo.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+  }
+
+  /* SVG Altair Logo */
+  .svgA {
+    width: 80px;
+    height: 80px;
+    margin-inline-end: 10px;
+    background-color: var(--text1);
+    -webkit-mask-image: url("../../../../../assets/altair_logo.svg");
+    mask-image: url("../../../../../assets/altair_logo.svg");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  /* Icono/Caja de Educacion adicional */
+  .techSq {
+    background-color: #303030;
+    overflow: hidden;
+    color: rgb(255, 204, 0);
+    border-radius: 10px;
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    i {
+      text-shadow: 1px 4px 2px #0000001e;
+    }
+  }
+
+  /* Todo lo relacionado con hacer que haya Scroll horizontal para ver educacion adicionales */
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    /* Habilita el scroll horizontal */
+    white-space: nowrap;
+    /* Evita que los elementos bajen de línea */
+
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    height: 7px;
+    /* Tamaño del scroll horizontal */
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: var(--scrollBar);
+    /* Color del scroll */
+    border-radius: 4px;
+  }
+
+  .scroll-container::-webkit-scrollbar-track {
+    background-color: var(--scrollBg);
+    border-radius: 4px;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollBarHover);
+    /* Color del scroll al hacer hover */
+  }

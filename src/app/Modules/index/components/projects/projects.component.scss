@@ -1,232 +1,245 @@
-.seccionExperience {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    color: var(--text1);
-}
+  /*
+  SCSS de: Componente Projecs
+  @Autor: Pablo López Luján
+          github.com/pablolop12
+  */
 
-.extraInf{
-    flex-grow: 1;
-}
-
-
-.background-wrapper {
-    position: relative;
-    overflow: hidden;
-    padding: 70px 0px 0px 20px;
-}
-
-.background-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    filter: blur(60px);
-    width: 800px;
-    height: 400px;
-    background: radial-gradient(circle, var(--light), rgba(29, 37, 60, 0));
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    filter: blur(50px);
-    pointer-events: none;
-}
-
-.content {
-    position: relative;
-    z-index: 1;
-}
-
-h1 {
-    font-weight: 800;
-    color: var(--text);
-}
-
-p {
-    color: var(--text2);
-    font-size: 1.125rem;
-    line-height: 1.5;
-    letter-spacing: -0.017em;
-    font-weight: 400;
-}
-
-.techTag{
-    color: var(--text2);
-    font-weight: 300;
-    font-size: 18px;
-}
-
-span {
-    color: var(--accent);
-    font-weight: 600;
-}
-
-.introTitle {
-    color: var(--pretext);
-}
-
-.holder2 {
-    padding-inline: 8px;
-    max-width: 355px;
-     
-}
-
-.gitPrev {
-    background-color: var(--gitprev);
-    backdrop-filter: blur(4px);
-    border-radius: 8px;
-}
-
-.projectHolder{
-
-    
-    .contentB{
-        
-
-        h2{
-            font-weight: 500;
-            font-size: 27px;
-        }
-        .techBadge{
-            background-color: var(--badgeBack);
-            color: var(--badgeText);
-            padding: 4px 10px;
-            margin-inline-end: 10px;
-            border-radius: 50px;
-            font-weight: 400;
-        }
-
-        p{
-            padding-top: 10px;
-            
-        }
-
-    
-
-        .tryBtn{
-            background-color: var(--discoverBtnBg);
-            border: 1px solid var(--discoverBtnBrdr);
-            color: var(--text1);
-            margin-inline-end: 10px;
-            padding: 5px 10px;
-            text-decoration: none;
-            border-radius: 3px;
-            transition: background-color 0.3s ease; /* Transición suave para el fondo */
-            
-        }
-        .tryBtn:hover {
-            background-color: var(--discoverBtnHover);
-        }
-        
-        
-        
-    }
-}
-
-
-
-
-
-
-
-
-
-
-/* Media Queries */
-/* Large devices (desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .background-wrapper::before {
-        width: 800px;
-        height: 400px;
-        filter: blur(50px);
-        opacity: 1;
-    }
-}
-
-/* Medium devices (tablets, 768px to 1199px) */
-@media (min-width: 768px) and (max-width: 1199px) {
-    .background-wrapper::before {
-        width: 600px;
-        height: 300px;
-        filter: blur(40px);
-        opacity: 0.8;
-    }
-}
-
-/* Small devices (landscape phones, 576px to 767px) */
-@media (min-width: 576px) and (max-width: 767px) {
-    .background-wrapper::before {
-        width: 400px;
-        height: 400px;
-        filter: blur(20px);
-        opacity: 0.8;
-    }
-
-    .background-wrapper {
-        padding: 30px 20px;
-    }
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) {
-    .background-wrapper::before {
-        width: 400px;
-        height: 350px;
-        filter: blur(20px);
-        opacity: 0.7;
-    }
-
-    .background-wrapper {
-        padding: 30px 20px;
-    }
-}
-
-.textToggle{
-    text-decoration: underline;
-    color: var(--text1);
-    animation: transform 0.5s ease;
-}
-
-.textToggle:hover{
-    color: var(--text2);
-}
-
-
-.extra-projects {
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 0.5s ease, opacity 0.5s ease;
-  }
-  
-  .extra-projects.expanded {
-    max-height: 1000px; /* Altura máxima arbitraria */
-    opacity: 1;
+  /* Container del componente */
+  .seccionProjects {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      color: var(--text1);
   }
 
-/* Estilo para pantallas grandes (ancho mayor o igual a 1201px) */
-.project-image {
+  /* Efecto de luz de fondo en el titulo */
+  .background-wrapper {
+      position: relative;
+      overflow: hidden;
+      padding: 70px 0px 0px 20px;
+  }
+
+  .background-wrapper::before {
+      content: '';
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      filter: blur(60px);
+      width: 800px;
+      height: 400px;
+      background: radial-gradient(circle, var(--light), rgba(29, 37, 60, 0));
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      filter: blur(50px);
+      pointer-events: none;
+  }
+
+  /* Todo lo relacionado con texto y titulos */
+  .content {
+      position: relative;
+      z-index: 1;
+  }
+
+  h1 {
+      font-weight: 800;
+      color: var(--text);
+  }
+
+  p {
+      color: var(--text2);
+      font-size: 1.125rem;
+      line-height: 1.5;
+      letter-spacing: -0.017em;
+      font-weight: 400;
+  }
+
+  .techTag {
+      color: var(--text2);
+      font-weight: 300;
+      font-size: 18px;
+  }
+
+  span {
+      color: var(--accent);
+      font-weight: 600;
+  }
+
+  .introTitle {
+      color: var(--pretext);
+  }
+
+
+  /* Holder del gitprev */
+  .holder2 {
+      padding-inline: 8px;
+      max-width: 355px;
+
+  }
+
+  /* Estilos del marco de GitPrev */
+  .gitPrev {
+      background-color: var(--gitprev);
+      backdrop-filter: blur(4px);
+      border-radius: 8px;
+  }
+
+
+  /* Div que sostiene cada proyecto */
+  .projectHolder {
+
+
+      .contentB {
+          h2 {
+              font-weight: 500;
+              font-size: 27px;
+          }
+
+          .techBadge {
+              background-color: var(--badgeBack);
+              color: var(--badgeText);
+              padding: 4px 10px;
+              margin-inline-end: 10px;
+              border-radius: 50px;
+              font-weight: 400;
+          }
+
+          p {
+              padding-top: 10px;
+
+          }
+
+          .tryBtn {
+              background-color: var(--discoverBtnBg);
+              border: 1px solid var(--discoverBtnBrdr);
+              color: var(--text1);
+              margin-inline-end: 10px;
+              padding: 5px 10px;
+              text-decoration: none;
+              border-radius: 3px;
+              transition: background-color 0.3s ease;
+
+
+          }
+
+          .tryBtn:hover {
+              background-color: var(--discoverBtnHover);
+          }
+
+
+
+      }
+  }
+
+  /* Estilo de las imagenes del proyecto */
+  .project-image {
     width: 350px;
     height: 248px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-/* Estilo para pantallas menores de 1201px */
-@media (max-width: 991.2px) {
-    .projectHolder {
-      flex-direction: column; /* En pantallas más pequeñas, imágenes y texto en columna */
-      align-items: center; /* Centra las imágenes y el contenido */
-    }
-  
-    .project-image {
-      width: 100%; /* Para que la imagen ocupe todo el ancho del contenedor */
-      max-width: 484px; /* Limitar el ancho a 400px */
-      height: 300px; /* Mantener la altura fija */
-      object-fit: cover; /* Mantiene la proporción de la imagen */
-    }
-  
-    .contentB {
-      text-align: center; /* Centra el contenido en pantallas más pequeñas */
-    }
+
+
+  /* Texto mostrar más */
+  .textToggle {
+      text-decoration: underline;
+      color: var(--text1);
+      animation: transform 0.5s ease;
   }
 
+  .textToggle:hover {
+      color: var(--text2);
+  }
+
+/* Div que holdea los projectos ocultos */
+  .extra-projects {
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+
+  .extra-projects.expanded {
+      max-height: 1000px;
+      /* Altura máxima arbitraria */
+      opacity: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Media Queries */
+  @media (min-width: 1200px) {
+      .background-wrapper::before {
+          width: 800px;
+          height: 400px;
+          filter: blur(50px);
+          opacity: 1;
+      }
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+      .background-wrapper::before {
+          width: 600px;
+          height: 300px;
+          filter: blur(40px);
+          opacity: 0.8;
+      }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+      .background-wrapper::before {
+          width: 400px;
+          height: 400px;
+          filter: blur(20px);
+          opacity: 0.8;
+      }
+
+      .background-wrapper {
+          padding: 30px 20px;
+      }
+  }
+
+  @media (max-width: 575px) {
+      .background-wrapper::before {
+          width: 400px;
+          height: 350px;
+          filter: blur(20px);
+          opacity: 0.7;
+      }
+
+      .background-wrapper {
+          padding: 30px 20px;
+      }
+  }
+
+  @media (max-width: 991.2px) {
+      .projectHolder {
+          flex-direction: column;
+          /* En pantallas más pequeñas, imágenes y texto en columna */
+          align-items: center;
+          /* Centra las imágenes y el contenido */
+      }
+
+      .project-image {
+          width: 100%;
+          /* Para que la imagen ocupe todo el ancho del contenedor */
+          max-width: 484px;
+          /* Limitar el ancho a 400px */
+          height: 300px;
+          /* Mantener la altura fija */
+          object-fit: cover;
+          /* Mantiene la proporción de la imagen */
+      }
+
+      .contentB {
+          text-align: center;
+          /* Centra el contenido en pantallas más pequeñas */
+      }
+  }

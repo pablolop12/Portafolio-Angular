@@ -7,7 +7,7 @@ import * as bootstrap from 'bootstrap';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements AfterViewInit {
-  selectedIndex = 1;
+  selectedIndex = 0;
 
   selectDiv(index: number) {
     if (this.selectedIndex !== index) {

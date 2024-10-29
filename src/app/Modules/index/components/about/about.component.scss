@@ -1,3 +1,10 @@
+  /*
+  SCSS de: Componente About
+  @Autor: Pablo López Luján
+          github.com/pablolop12
+  */
+
+  /* Container del componente */
 .seccionAbout {
   position: relative;
   overflow: hidden;
@@ -5,6 +12,7 @@
   color: var(--text1);
 }
 
+/* Estilos de los textos */
 h1{
   font-weight: 800;
   color: var(--text1);
@@ -29,6 +37,7 @@ span{
   
 }
 
+/* Estilo imagen de perfil */
 .pfp{
   border-radius: 15px;
   height: 68%;
