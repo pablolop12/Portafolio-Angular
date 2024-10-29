@@ -1,0 +1,148 @@
+<div class="carousel-container">
+    <div class="display-div pt-3">
+        <!-- Div que muestra el contenido seleccionado con transición -->
+        <div *ngIf="selectedIndex === 0" [ngClass]="{'slide': true, 'slide-active': selectedIndex === 0}">
+            <app-polygon-skills></app-polygon-skills>
+        </div>
+
+        <!-- Grupo 1: Tecnologías de Backend -->
+        <div *ngIf="selectedIndex === 1" [ngClass]="{'slide': true, 'slide-active': selectedIndex === 1}">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <div class="techSq java" data-bs-toggle="tooltip" data-bs-placement="top" title="Java">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="techSq spring" data-bs-toggle="tooltip" data-bs-placement="top" title="Spring Boot">
+                        <i class="devicon-spring-original"></i>
+                    </div>
+                    <div class="techSq hibernateJPA" data-bs-toggle="tooltip" data-bs-placement="top" title="Hibernate">
+                        <i class="devicon-hibernate-plain"></i>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="techSq2 rest d-flex flex-column align-items-center justify-content-center"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="API REST">
+                        <i class="fa-solid fa-cloud"></i>
+                        <span>REST</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo 2: Tecnologías de Frontend -->
+        <div *ngIf="selectedIndex === 2" [ngClass]="{'slide': true, 'slide-active': selectedIndex === 2}">
+            <div class="d-flex justify-content-center">
+                <div class="techSq angular" data-bs-toggle="tooltip" data-bs-placement="top" title="Angular">
+                    <i class="fa-brands fa-angular"></i>
+                </div>
+                <div class="techSq html" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML5">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="techSq sass" data-bs-toggle="tooltip" data-bs-placement="top" title="Sass">
+                    <i class="fa-brands fa-sass"></i>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center ">
+                <div class="techSq js" data-bs-toggle="tooltip" data-bs-placement="bottom" title="JavaScript">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="techSq bootstrap" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bootstrap">
+                    <i class="fa-brands fa-bootstrap"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo 3: Bases de datos -->
+        <div *ngIf="selectedIndex === 3" [ngClass]="{'slide': true, 'slide-active': selectedIndex === 3}">
+            <div class="d-flex justify-content-center">
+                <div class="techSq postgre" data-bs-toggle="tooltip" data-bs-placement="top" title="PostgreSQL">
+                    <i class="devicon-postgresql-plain"></i>
+                </div>
+                <div class="techSq mysql" data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL">
+                    <i class="devicon-mysql-plain-wordmark"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo 4: Cloud y Sistemas Operativos -->
+        <div *ngIf="selectedIndex === 4" [ngClass]="{'slide': true, 'slide-active': selectedIndex === 4}">
+            <div class="d-flex justify-content-center">
+                <div class="techSq aws" data-bs-toggle="tooltip" data-bs-placement="top" title="AWS">
+                    <i class="fa-brands fa-aws"></i>
+                </div>
+                <div class="techSq linux" data-bs-toggle="tooltip" data-bs-placement="top" title="Linux">
+                    <i class="fa-brands fa-linux"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo 5: Control de Versiones -->
+        <div *ngIf="selectedIndex === 5" [ngClass]="{'slide': true, 'slide-active': selectedIndex === 5}">
+            <div class="d-flex justify-content-center">
+                <div class="techSq github" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="techSq gitlab" data-bs-toggle="tooltip" data-bs-placement="top" title="GitLab">
+                    <i class="fa-brands fa-gitlab"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo 6: Herramientas de Desarrollo -->
+        <div *ngIf="selectedIndex === 6" [ngClass]="{'slide': true, 'slide-active': selectedIndex === 6}">
+            <div class="d-flex justify-content-center">
+                <div class="techSq eclipse" data-bs-toggle="tooltip" data-bs-placement="top" title="Eclipse">
+                    <i class="devicon-eclipse-plain-wordmark"></i>
+                </div>
+                <div class="techSq vscode" data-bs-toggle="tooltip" data-bs-placement="top" title="VS Code">
+                    <i class="devicon-vscode-plain"></i>
+                </div>
+                <div class="techSq postman" data-bs-toggle="tooltip" data-bs-placement="top" title="Postman">
+                    <i class="devicon-postman-plain"></i>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="techSq windows" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Windows">
+                    <i class="fa-brands fa-windows"></i>
+                </div>
+                <div class="techSq notion" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notion">
+                    <i class="devicon-notion-plain"></i>
+                </div>
+                <div class="techSq figma" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Figma">
+                    <i class="devicon-figma-plain"></i>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="techSq photoshop" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Photoshop">
+                    <i class="devicon-photoshop-plain"></i>
+                </div>
+                <div class="techSq intellij" data-bs-toggle="tooltip" data-bs-placement="bottom" title="IntelliJ IDEA">
+                    <i class="devicon-intellij-plain"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu text-center">
+        <div (click)="selectDiv(0)" [class.active]="selectedIndex === 0" style="margin-top: 12px;">
+            <i class="fa-solid fa-house menu-icon"></i>
+        </div>
+        <div (click)="selectDiv(1)" [class.active]="selectedIndex === 1">
+            <i class="fa-solid fa-gears menu-icon"></i>
+        </div>
+        <div (click)="selectDiv(2)" [class.active]="selectedIndex === 2">
+            <i class="fa-solid fa-brush menu-icon"></i>
+        </div>
+        <div (click)="selectDiv(3)" [class.active]="selectedIndex === 3">
+            <i class="fa-solid fa-database menu-icon"></i>
+        </div>
+        <div (click)="selectDiv(4)" [class.active]="selectedIndex === 4">
+            <i class="fa-solid fa-rocket menu-icon"></i>
+        </div>
+        <div (click)="selectDiv(5)" [class.active]="selectedIndex === 5">
+            <i class="fa-solid fa-code-branch menu-icon"></i>
+        </div>
+        <div (click)="selectDiv(6)" [class.active]="selectedIndex === 6">
+            <i class="fa-solid fa-layer-group menu-iconLast"></i>
+        </div>
+    </div>
+</div>

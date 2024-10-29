@@ -19,6 +19,7 @@ import { NzPopoverModule } from 'ng-zorro-antd/popover';
 import { ExpProgressComponent } from './components/exp-progress/exp-progress.component';
 import { GitprevComponent } from './components/gitprev/gitprev.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
@@ -39,6 +40,7 @@ const routes: Routes = [
     ExpProgressComponent,
     GitprevComponent,
     FooterComponent,
+    CarouselComponent
 
   ],
   imports: [

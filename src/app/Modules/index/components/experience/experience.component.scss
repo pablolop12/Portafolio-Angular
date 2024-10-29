@@ -13,7 +13,7 @@
   }
 
   .baseExperience2{
-    background-color: var(--baseExp);
+    background: linear-gradient(121deg, var(--background2) 0%, var(--baseExp) 100%);
     backdrop-filter: blur(4px);
     border-radius: 8px;
     padding: 20px;

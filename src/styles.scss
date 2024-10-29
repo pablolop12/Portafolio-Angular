@@ -1,5 +1,9 @@
 :root {
   --white: white;
+
+  --scrollBar: #ffffff75;
+  --scrollBarHover: #ffffff5f;
+  --scrollBg: #252525;
   //NAVBAR
   --navVignette: #000000dc;
 
@@ -34,10 +38,11 @@
   --line4: #00c850;
   --line5: #69dea1;
 
-  --discoverBtnBg: #ffffff09;
+  --discoverBtnBg: #ffffff0f;
   --discoverBtnBrdr: #ffffff2b;
   --discoverBtnHover: #ffffff1a;
   --discoverBtnActive: #ffffff04;
+  --discoverBtnActive2: #ffffff28;
 
   //TRAYECTORIA
   --tl1: #ffffff00;
@@ -52,13 +57,14 @@
   --bento: #222222;
   --light: #289b60;
 
-  --badgeText:#a9fdd0ff;
-  --badgeBack:#1f4c33;
+  --badgeText:rgb(204, 204, 204);
+  --badgeBack:#4a4a4a;
   
 
 
   //BACKGROUND
   --background: #161616;
+  --background2: #223125;
   --cir0: #161616;
   --cir1: #161616;
   --cir2: #161616;
@@ -85,6 +91,10 @@
 
 .light-theme {
   --white: white;
+
+  --scrollBar: #616161a2;
+  --scrollBarHover: #616161e8;
+  --scrollBg: #bbbbbb;
   //NAVBAR
   --navVignette: #ffffffdc;
 
@@ -118,11 +128,12 @@
   --line4: #2b2b2b;
   --line5: #2b2b2b;
 
-  --discoverBtnBg: #19191909;
+  --discoverBtnBg: #19191913;
   --discoverBtnBrdr: #0000002b;
   --discoverBtnHover: #00000020;
   --discoverBtnActive: #ffffff04;
-
+  --discoverBtnActive2: #00000037;
+  
   //TRAYECTORIA
   --tl1: #00000000;
   --tl2: #00000093;
@@ -135,13 +146,14 @@
   --gitText2: #000000a7;
   --bento: #f3f3f3;
 
-  --badgeText:rgb(0, 54, 25);
-  --badgeBack:#017e3a58;
+  --badgeText:rgb(58, 58, 58);
+  --badgeBack:#70707058;
   
 
 
   //BACKGROUND
   --background: #ffffff;
+  --background2: #cdf5d4;
   --cir0: #000000;
   --cir1: #000000;
   --cir2: #000000;

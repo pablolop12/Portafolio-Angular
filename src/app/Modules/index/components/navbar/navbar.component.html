@@ -7,7 +7,7 @@
       <img src="../../../../../assets/image.png" height="40px">
     </a>
 
-    <!-- BOTON HAMBURGUESA -->
+    <!-- BOTÓN HAMBURGUESA -->
     <button class="navbar-toggler" type="button" (click)="toggleMenu()" [ngClass]="{'collapsed': isMenuCollapsed}" aria-expanded="!isMenuCollapsed" aria-label="Toggle navigation">
       <span class="toggler-icon top-bar"></span>
       <span class="toggler-icon middle-bar"></span>
@@ -18,19 +18,19 @@
     <div class="collapse navbar-collapse" id="menu" [ngClass]="{'show': !isMenuCollapsed}">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'skills' }">
-          <a class="nav-link" href="#skills">Tecnologías</a>
+          <a class="nav-link" (click)="scrollToSection('skills')">Tecnologías</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'experience' }">
-          <a class="nav-link" href="#experience">Trayectoria</a>
+          <a class="nav-link" (click)="scrollToSection('experience')">Trayectoria</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'projects' }">
-          <a class="nav-link" href="#projects">Proyectos</a>
+          <a class="nav-link" (click)="scrollToSection('projects')">Proyectos</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'about' }">
-          <a class="nav-link" href="#about">Pablo</a>
+          <a class="nav-link" (click)="scrollToSection('about')">Pablo</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'contact' }">
-          <a class="nav-link" href="#contact">Contacto</a>
+          <a class="nav-link" (click)="scrollToSection('contact')">Contacto</a>
         </li>
 
         <!-- Botón de cambio de tema -->

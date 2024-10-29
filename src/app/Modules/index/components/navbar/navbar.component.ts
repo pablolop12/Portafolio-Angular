@@ -68,4 +68,26 @@ export class NavbarComponent implements OnInit {
       navbarToggler?.classList.remove('collapsed');
     }
   }
+
+  // Desplaza la vista a la sección especificada
+  scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      // Calcula la posición del desplazamiento con un offset
+      const offset = 80; // Ajusta este valor para establecer el espacio extra deseado
+      const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
+  
+      // Desplazamiento suave con offset
+      window.scrollTo({
+        top: sectionPosition,
+        behavior: 'smooth'
+      });
+  
+      // Cierra el menú en pantallas pequeñas después de hacer clic
+      this.isMenuCollapsed = true;
+    }
+  }
+  
+
+  
 }
