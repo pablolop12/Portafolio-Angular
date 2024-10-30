@@ -22,29 +22,10 @@
 }
 
 
-/* Animación para colorear texto */
+/* Titulo grande */
 .nombre-animado {
   font-family: Frygia-Heavy;
-  background: -webkit-linear-gradient(0deg, var(--tAnimado1), var(--tAnimado2), var(--tAnimado3), var(--tAnimado4), var(--tAnimado5));
-  background-size: 400%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animacion 5s linear infinite;
-}
-
-@keyframes animacion {
-  0% {
-    background-position: 0%;
-  }
-
-  50% {
-    background-position: 100%;
-  }
-
-  100% {
-    background-position: 0%;
-  }
+  color: var(--tAnimado1);
 }
 
 
@@ -62,6 +43,7 @@
   cursor: pointer;
   font-size: 16px;
   transition: 0.2s ease-in-out;
+  text-decoration: none;
 
   .text-semi2 {
     color: var(--bText);

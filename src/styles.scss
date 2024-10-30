@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@font-face {
+  font-family: "Frygia-Heavy";
+  src: url(assets/Frygia-Heavy.ttf) format("truetype");
+  font-display: swap;
+}
+
+/* Variables de color modo oscuro (Por defecto) */
 :root {
   --white: white;
 
@@ -8,11 +17,7 @@
   --navVignette: #000000dc;
 
   //TEXTO ANIMADO
-  --tAnimado1: #18ba36;
-  --tAnimado2: #15d67c;
-  --tAnimado3: #20c438;
-  --tAnimado4: #14d592;
-  --tAnimado5: #26e482;
+  --tAnimado1: #0dc867;
 
   //TEXTOS RECURRENTES
   --text1: #ebebeb;
@@ -88,7 +93,7 @@
   --input: #1cdc6c3f;
 }
 
-
+/* Variables de color modo claro */
 .light-theme {
   --white: white;
 
@@ -100,10 +105,7 @@
 
   //TEXTO ANIMADO
   --tAnimado1: #272727;
-  --tAnimado2: #272727;
-  --tAnimado3: #272727;
-  --tAnimado4: #272727;
-  --tAnimado5: #272727;
+
 
   //TEXTOS RECURRENTES
   --text1: #272727;
@@ -173,27 +175,18 @@
   //OTROS
   --badgeB: #0000001f; //Borde del badge experiencia/formación
   --badgeBg: #ffffff4c; //Background del badge
-  --footer: #0000000d;
+  --footer: #171717;
   --input: #17b4583f;
 }
 
 
 
-
-
-
-@font-face {
-  font-family: "Frygia-Heavy";
-  src: url(assets/Frygia-Heavy.ttf) format("truetype");
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+/* Asignación de Roboto a toda la página */
 * {
   font-family: "Roboto", sans-serif;
 }
 
-
+/* Declaración de tipos de Roboto, pesos */
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -266,11 +259,8 @@
   font-style: italic;
 }
 
-::-moz-selection {
-  /* Code for Firefox */
-  background: rgba(17, 108, 165, 0.529);
-}
 
+//Colores Selección cursor
 ::selection {
   color: var(--text1);
 
@@ -278,6 +268,7 @@
 
 }
 
+/* Estilos de scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -292,4 +283,3 @@
 }
 
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';

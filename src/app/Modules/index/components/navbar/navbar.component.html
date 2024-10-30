@@ -4,15 +4,17 @@
 
     <!-- LOGO -->
     <a class="navbar-brand me-5" href="#top">
-      <img src="../../../../../assets/image.png" height="40px">
+      <img src="../../../../../assets/image.webp" height="40px" alt="Logo de la pagina">
     </a>
 
     <!-- BOTÓN HAMBURGUESA (Menú colapsable) -->
-    <button class="navbar-toggler" type="button" (click)="toggleMenu()" [ngClass]="{'collapsed': isMenuCollapsed}" aria-expanded="!isMenuCollapsed" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()" [ngClass]="{'collapsed': isMenuCollapsed}"
+      [attr.aria-expanded]="!isMenuCollapsed" aria-label="Toggle navigation">
       <span class="toggler-icon top-bar"></span>
       <span class="toggler-icon middle-bar"></span>
       <span class="toggler-icon bottom-bar"></span>
     </button>
+
 
     <!-- Elementos del menú -->
     <div class="collapse navbar-collapse" id="menu" [ngClass]="{'show': !isMenuCollapsed}">

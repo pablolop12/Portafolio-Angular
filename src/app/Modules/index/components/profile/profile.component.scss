@@ -13,15 +13,14 @@
     overflow: hidden;
   }
 
-  /* Clase para añadir animación de nombre colorido */
+
+  /* Titulo texto */
   .nombre-animado {
     font-family: Frygia-Heavy;
-    background: -webkit-linear-gradient(0deg, var(--tAnimado1), var(--tAnimado2), var(--tAnimado3), var(--tAnimado4), var(--tAnimado5));
-    background-size: 400%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animacion 5s linear infinite;
+    color: var(--tAnimado1);
+    font-weight: 900;
+    font-size: 85px;
+    margin: none;
   }
 
   /* Texto secundario (Color primario) */
@@ -60,12 +59,6 @@
     background-color: var(--bClick);
   }
 
-  /* Texto nombre (Pablo López Luján) */
-  .bigText {
-    font-weight: 900;
-    font-size: 85px;
-    margin: none;
-  }
 
 
   /* Texto secundairo "Desarrollador Full-Stack ..." */
@@ -132,28 +125,11 @@
 
   /* ANIMACIONES:  
 
-  - Nombre animado (animacion)
   - Disponibilidad (pulse)
   - Incentivar Scroll (bounce)
   - Escritura 1 (typing)
   - Escritura 2 (blink-caret)
   */
-
-  @keyframes animacion {
-
-    //Animación para el nombre colorido
-    0% {
-      background-position: 0%;
-    }
-
-    50% {
-      background-position: 100%;
-    }
-
-    100% {
-      background-position: 0%;
-    }
-  }
 
   @keyframes pulse {
 
