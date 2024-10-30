@@ -8,11 +8,15 @@
 
 /* Variables de color modo oscuro (Por defecto) */
 :root {
-  --white: white;
+  --white: rgba(255, 255, 255, 0.475);
 
   --scrollBar: #ffffff75;
   --scrollBarHover: #ffffff5f;
   --scrollBg: #252525;
+
+  --scrollBarWeb: #777777;
+  --scrollBarHoverWeb: #ffffff5f;
+  --scrollBgWeb: #252525;
   //NAVBAR
   --navVignette: #000000dc;
 
@@ -100,6 +104,10 @@
   --scrollBar: #616161a2;
   --scrollBarHover: #616161e8;
   --scrollBg: #bbbbbb;
+
+  --scrollBarWeb: #01010175;
+  --scrollBarHoverWeb: #ffffff5f;
+  --scrollBgWeb: #bdbdbd;
   //NAVBAR
   --navVignette: #ffffffdc;
 
@@ -175,7 +183,7 @@
   //OTROS
   --badgeB: #0000001f; //Borde del badge experiencia/formación
   --badgeBg: #ffffff4c; //Background del badge
-  --footer: #171717;
+  --footer: #17171711;
   --input: #17b4583f;
 }
 
@@ -260,6 +268,10 @@
 }
 
 
+body{
+  background-color: var(--background);
+}
+
 //Colores Selección cursor
 ::selection {
   color: var(--text1);
@@ -274,12 +286,12 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #262627;
+  background-color: var(--scrollBgWeb);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.386);
-  border-radius: 3px
+  background-color: var(--scrollBarWeb);
+  border-radius: 50px
 }
 
 
