@@ -54,13 +54,17 @@
   */
 
   /* Reset de estilo para el botón Hamburguesa del Navbar tamaño pequeño */
-  .navbar-toggler:focus,
-  .navbar-toggler:active,
-  .navbar-toggler-icon:focus {
-    outline: none !important;
-    box-shadow: none !important;
-    border: 0 !important;
-  }
+  /* Reset de estilo para el botón Hamburguesa del Navbar */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus,
+.navbar-toggler:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 
   /*  Espacio entre las lineas botón Hamburguesa */
   .middle-bar {
@@ -124,10 +128,15 @@
   }
 }
 
-  /* Media query para navbar tamano pequeño */
+  /* Media query para navbar tamano pequeño estilos nav pequeño */
   @media (max-width: 767.98px) {
+    .vignette{
+      opacity: 0;
+    }
     .navbar {
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.564);
+      background-color: var(--navbarMini);
+      margin: 7px;
+      border-radius: 10px;
       backdrop-filter: blur(7px);
       -webkit-backdrop-filter: blur(5.5px);
       transition: background-color 0.2s ease-in-out;
