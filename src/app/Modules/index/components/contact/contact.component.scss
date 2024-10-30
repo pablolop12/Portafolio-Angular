@@ -1,8 +1,7 @@
-/*
-  SCSS de: Componente Contact
-  @Autor: Pablo López Luján
-          github.com/pablolop12
-  */
+/* SCSS de: Componente Contact
+   @Autor: Pablo López Luján
+   github.com/pablolop12
+*/
 
 /* COntenedor del componente */
 .seccionContact {
@@ -12,7 +11,6 @@
   color: var(--text1);
 }
 
-
 /* Textos */
 .preTittle {
   font-size: 30px !important;
@@ -21,19 +19,17 @@
   margin: 0;
 }
 
-
 /* Titulo grande */
 .nombre-animado {
   font-family: Frygia-Heavy;
   color: var(--tAnimado1);
 }
 
-
+/* Botones */
 .linkHolder {
   padding: 5px;
   padding-inline: 10px;
   border-radius: 15px;
-  //border: #0052cc solid 1px;
   border: none;
   background-color: var(--bBg);
   display: flex;
@@ -56,16 +52,23 @@
 
 .linkHolder:active {
   transform: scale(0.95);
-  /* Reduce ligeramente el tamaño del botón al hacer clic */
-  transition: ease-in-out 0.06 s;
+  transition: ease-in-out 0.06s;
   background-color: var(--bClick);
 }
 
-
-
 /* Media query */
 @media screen and (max-width: 768px) {
-  .formulario form input[type="submit"] {
-    width: 100%;
+  .nombre-animado {
+    font-size: 50px; /* Reduce el tamaño del título */
+    text-align: center;
+  }
+
+  .contact {
+    flex-direction: column; /* Alinea los botones en columna */
+  }
+
+  .linkHolder {
+    text-align: center;
+    margin-bottom: 10px; /* Espacio entre botones */
   }
 }
