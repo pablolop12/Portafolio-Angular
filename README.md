@@ -1,27 +1,34 @@
-# Portafolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+# Portfolio Angular - Pablo López Luján
+Este es mi portfolio personal, creado con Angular para mostrar mis habilidades y proyectos de desarrollo web. Incluye un diseño interactivo y optimizado, con un enfoque en interfaces limpias y estéticas.
 
-## Development server
+## Vista previa
+Estas imágenes pueden estar sujetas a cambio, la apariencia de la web puede no ser idéntica actualmente.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Captura de la sección inicial](https://i.imgur.com/hKzoYhZ.png)
 
-## Code scaffolding
+![Captura de la sección inicial](https://i.imgur.com/nSFHWYt.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Visita la web completa para ver todo el contenido a detalle: https://pablolopezlujan.es
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Stack tecnológico
+La web es puramente frontend por lo que no posee componentes lógicos más allá del Typescript que posee.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[![Angular](https://img.shields.io/badge/Angular(17)-red.svg)](https://choosealicense.com/licenses/mit/)
 
-## Running end-to-end tests
+[![Sass](https://img.shields.io/badge/Sass-pink.svg)](https://choosealicense.com/licenses/mit/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-purple.svg)](https://choosealicense.com/licenses/mit/)
 
-## Further help
+[![FontAwesome](https://img.shields.io/badge/FontAwesome-yellow.svg)](https://fontawesome.com/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Características
+- Diseño responsivo
+- Componentes personalizados (todo creado desde 0)
+- Optimización para lighthouse
+
+
+## Estructura del proyecto
+El proyecto está organizado en un único módulo del que parten todos los componentes. El contenido está dividido en secciones (componentes) las cuales pueden estar compuestos igualmente por más componentes. A su vez en la carpeta Assets se puede encontrar el contenido adicional de la página como fuentes e imágenes.
