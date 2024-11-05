@@ -23,7 +23,6 @@
   border-radius: 50%;
   filter: blur(110px);
   opacity: 1;
-  animation: glow 4s infinite alternate;
 }
 
 .background:before {
@@ -91,20 +90,6 @@
 
 
 
-@keyframes glow {
-  0% {
-    background-color: var(--cirG1);
-    box-shadow: 0 0 10px var(--cirG2), 0 0 20px var(--cirG2), 0 0 30px var(--cirG2), 0 0 40px var(--cirG2);
-  }
-  50% {
-    background-color: var(--cirG3);
-    box-shadow: 0 0 10px var(--cirG4), 0 0 20px var(--cirG4), 0 0 30px var(--cirG4), 0 0 40px var(--cirG4);
-  }
-  100% {
-    background-color: var(--cirG5);
-    box-shadow: 0 0 10px var(--cirG6), 0 0 20px var(--cirG6), 0 0 30px var(--cirG6), 0 0 40px var(--cirG6);
-  }
-}
 
 /* Media Queries para escalar los círculos del background */
 @media (max-width: 1200px) {

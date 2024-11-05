@@ -18,7 +18,7 @@
         <div class="row" style="height: 100%;">
 
           <!-- Perfil de Github -->
-          <div class="col-lg-4 justify-content-center d-flex">
+          <div class="col-lg-4 justify-content-center d-flex gitprevBloke">
             <div class="holder2 mb-5">
               <div class="gitPrev ">
                 <app-gitprev></app-gitprev>
@@ -34,7 +34,7 @@
               <img src="../../../../../assets/img_placeholder.webp" alt="Project Preview 3"
                 class="project-image img-fluid mb-3 mb-lg-0">
               <div class="contentB px-3">
-                <h2 class="mb-0">TFG: Gestor de rutinas</h2>
+                <h2 class="mb-0">Gestor de rutinas</h2>
                 <h3 class="techTag mb-3">#Front-End</h3>
 
                 <span class="techBadge" data-bs-toggle="tooltip" title="API REST, Spring, Hibernate">
@@ -47,16 +47,18 @@
                 <p>
                   Aplicación que permite la creación y seguimiento diario de rutinas de entrenamiento y dietas.
                   Visita el readme en el código para ver todas las especificaciones. </p>
-                <a class="tryBtn"><i class="fa-solid fa-code me-1"></i>Código</a>
-                <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
+                <a href="https://github.com/pablolop12/TFG-Gestion-de-Rutinas-FRONT" target="_blank"
+                  aria-label="Visitar repositorio de GitHub" class="tryBtn"><i
+                    class="fa-solid fa-code me-1"></i>Código</a>
+                <!-- <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a> -->
               </div>
             </div>
 
             <div class="projectHolder d-flex flex-lg-row flex-column mb-5">
-              <img src="../../../../../assets/img_placeholder.webp" alt="Project Preview 3"
+              <img src="../../../../../assets/shortly.webp" alt="Project Preview 3"
                 class="project-image img-fluid mb-3 mb-lg-0">
               <div class="contentB px-3">
-                <h2 class="mb-0">Pokedex Web</h2>
+                <h2 class="mb-0">Shortly</h2>
                 <h3 class="techTag mb-3">#Full-Stack</h3>
                 <span class="techBadge" data-bs-toggle="tooltip" title="API REST, Spring, Hibernate">
                   <i class="fa-brands fa-java me-1"></i>Java
@@ -66,14 +68,20 @@
                   <i class="fa-brands fa-angular me-1"></i>Angular
                 </span>
                 <p>
-                  Base de datos sobre Pokemon con diseño retro, funciona con una API REST personal creada desde cero.
+                  Proyecto web para acortar links de forma rápida y simple, sin necesidad de iniciar sesión ni
+                  procedimientos
+                  tediosos que alargan el proceso.
                 </p>
-                <a class="tryBtn"><i class="fa-solid fa-code me-1"></i>Código</a>
-                <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
+                <a href="https://github.com/pablolop12/Shortly-URL-Shortener" target="_blank"
+                  aria-label="Visitar repositorio de GitHub" class="tryBtn"><i
+                    class="fa-solid fa-code me-1"></i>Código</a>
+                <!-- <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a> -->
               </div>
             </div>
 
-            <!-- Proyectos ocultos inicialmente -->
+            <!-- MOSTRAR MAS OCULTO HASTA QUE ESTEN LISTOS LOS OTROS DOS PROYECTOS
+             
+            ##PROYECTOS
             <div class="extra-projects" [ngClass]="{'expanded': showMore}">
               <div class="projectHolder d-flex flex-lg-row flex-column mb-5">
                 <img src="../../../../../assets/img_placeholder.webp" alt="Project Preview 3"
@@ -101,7 +109,8 @@
                     <i class="fa-brands fa-angular me-1"></i>Angular
                   </span>
                   <p>
-                    Web destinada al seguimiento de los macros e ingesta calórica diaria de un usuario. El usuario crea su
+                    Web destinada al seguimiento de los macros e ingesta calórica diaria de un usuario. El usuario crea
+                    su
                     cuenta y el sistema estima unos macros objetivo diarios según sus datos.
                   </p>
                   <a class="tryBtn"><i class="fa-solid fa-code me-1"></i>Código</a>
@@ -110,13 +119,14 @@
               </div>
             </div>
 
-            <!-- Botón para mostrar más proyectos -->
+         ##Botón para mostrar más proyectos 
             <div class="text-center">
               <a class="textToggle" (click)="toggleShowMore()">
                 {{ showMore ? 'Mostrar menos proyectos' : 'Mostrar más proyectos' }}
                 <i class="fa ms-2" [ngClass]="showMore ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
               </a>
             </div>
+            -->
 
           </div>
 
