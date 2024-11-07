@@ -277,4 +277,15 @@ body{
   border-radius: 50px
 }
 
+/* Animación de entrada */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px); /* Aparece desde abajo */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Finaliza en su posición original */
+  }
+}
 

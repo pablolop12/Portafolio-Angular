@@ -138,6 +138,7 @@
       height: 248px;
       object-fit: cover;
       border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.496);
   }
 
 
@@ -243,6 +244,7 @@
           /* Mantener la altura fija */
           object-fit: cover;
           /* Mantiene la proporción de la imagen */
+          
       }
 
       .contentB {
