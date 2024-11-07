@@ -7,16 +7,19 @@ export class ThemeService {
   private isDarkTheme = false;
 
   constructor() {
-    // Leer el tema guardado en localStorage
-    const savedTheme = localStorage.getItem('dark-theme');
-    this.isDarkTheme = savedTheme === 'true';
-    document.body.classList.toggle('dark-theme', this.isDarkTheme);
+    // Activar el tema oscuro por defecto
+    document.body.classList.add('dark-theme');
   }
 
   toggleTheme(): void {
     this.isDarkTheme = !this.isDarkTheme;
-    localStorage.setItem('light-theme', this.isDarkTheme.toString());
-    document.body.classList.toggle('light-theme', this.isDarkTheme);
+    if (this.isDarkTheme) {
+      document.body.classList.add('dark-theme');
+      document.body.classList.remove('light-theme');
+    } else {
+      document.body.classList.add('light-theme');
+      document.body.classList.remove('dark-theme');
+    }
   }
 
   get currentTheme(): boolean {
