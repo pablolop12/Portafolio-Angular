@@ -9,7 +9,7 @@ CSS de: Footer
 
 footer {
   margin: auto;
-  color: #ffffff7d;
+  color: var(--text2);
   z-index: 10;
   bottom: -15px;
   left: 0;
@@ -26,12 +26,12 @@ footer {
 
 .navLink{
   text-decoration: none;
-  color: #ffffffad;
+  color: var(--text2);
   font-weight: 400;
   cursor: pointer;
   transition: all 0.2s ease; /* Para transiciones suaves */
 }
 
 .navLink:hover{
-  color: #ffffff;
+  color: var(--text1);
 }
