@@ -61,10 +61,7 @@
       padding: none !important;
   }
 
-  span {
-      color: var(--accent);
-      font-weight: 600;
-  }
+
 
   .introTitle {
       color: var(--pretext);
@@ -94,6 +91,17 @@
           h2 {
               font-weight: 500;
               font-size: 27px;
+          }
+
+          .dot {
+              display: flex;
+              align-items: center;
+              color: var(--text2)
+          }
+
+          .dot i {
+              margin-top: 3px;
+              font-size: 10px;
           }
 
           .techBadge {
@@ -231,8 +239,8 @@
           /* Centra las imágenes y el contenido */
       }
 
-      .gitprevBloke{
-        display: none !important;
+      .gitprevBloke {
+          display: none !important;
       }
 
       .project-image {
@@ -244,7 +252,7 @@
           /* Mantener la altura fija */
           object-fit: cover;
           /* Mantiene la proporción de la imagen */
-          
+
       }
 
       .contentB {

@@ -158,3 +158,16 @@
     background-color: var(--scrollBarHover);
     /* Color del scroll al hacer hover */
   }
+
+
+
+  .info{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--formationBox);
+    border-radius: 5px;
+    padding: 8px;
+    border-left: 4px solid var(--accent);
+    font-size: 14px;
+    color: var(--text2);
+  }
