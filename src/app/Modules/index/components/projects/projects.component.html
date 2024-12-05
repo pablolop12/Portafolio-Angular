@@ -31,12 +31,13 @@
 
             <!-- Proyectos visibles inicialmente -->
             <div class="projectHolder d-flex flex-lg-row flex-column mb-5">
-              <img src="../../../../../assets/tfg.webp" alt="Project Preview 3"
+              <img src="../../../../../assets/tfg.webp" alt="Project Preview 1"
                 class="project-image img-fluid mb-3 mb-lg-0 shadow">
               <div class="contentB px-3">
                 <div class="d-flex justify-content-between">
                   <h2 class="mb-0">Gestor de rutinas</h2>
-                  <span class="dot text-warning">Publicando<i class="ms-2 text-warning   fa-solid fa-circle"></i></span>
+                  <span class="dot text-warning">Alojando Backend<i
+                      class="ms-2 text-warning   fa-solid fa-circle"></i></span>
                 </div>
                 <h3 class="techTag mb-3">#Full-Stack</h3>
 
@@ -53,12 +54,13 @@
                 <a href="https://github.com/pablolop12/Routine-Manager" target="_blank"
                   aria-label="Visitar repositorio de GitHub" class="tryBtn"><i
                     class="fa-solid fa-code me-1"></i>Código</a>
-                <!-- <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a> -->
+                    <a href="https://rutinas.pablolopezlujan.es" target="_blank" aria-label="Enlace a página de shortly"
+                    role="button" class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
               </div>
             </div>
 
             <div class="projectHolder d-flex flex-lg-row flex-column mb-5">
-              <img src="../../../../../assets/shortlyP.webp" alt="Project Preview 3"
+              <img src="../../../../../assets/shortlyP.webp" alt="Project Preview 2"
                 class="project-image img-fluid mb-3 mb-lg-0 shadow">
               <div class="contentB px-3">
                 <div class="d-flex justify-content-between">
@@ -81,36 +83,26 @@
                 <a href="https://github.com/pablolop12/Shortly-URL-Shortener" target="_blank"
                   aria-label="Visitar repositorio de GitHub" class="tryBtn"><i
                     class="fa-solid fa-code me-1"></i>Código</a>
-                <a href="https://shortly.pablolopezlujan.es" target="_blank" aria-label="Enlace a página de shortly" role="button" class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
+                <a href="https://shortly.pablolopezlujan.es" target="_blank" aria-label="Enlace a página de shortly"
+                  role="button" class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
               </div>
             </div>
 
-            <!-- MOSTRAR MAS OCULTO HASTA QUE ESTEN LISTOS LOS OTROS DOS PROYECTOS
-             
-            ##PROYECTOS
             <div class="extra-projects" [ngClass]="{'expanded': showMore}">
-              <div class="projectHolder d-flex flex-lg-row flex-column mb-5">
-                <img src="../../../../../assets/img_placeholder.webp" alt="Project Preview 3"
-                  class="project-image img-fluid mb-3 mb-lg-0 shadow">
-                <div class="contentB px-3">
-                  <h2 class="mb-0">Reto Front: Estilos de diseño</h2>
-                  <h3 class="techTag mb-3">#Front-End</h3>
-                  <span class="techBadge"><i class="fa-brands fa-angular me-1"></i>Angular</span>
-                  <p>
-                    Web con una disposición común que puede ser visualizada en distintos estilos de
-                    diseño, de esta forma podemos valorar como cambia la percepción de un sitio según su interfaz.
-                  </p>
-                  <a class="tryBtn"><i class="fa-solid fa-code me-1"></i>Código</a>
-                  <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
-                </div>
-              </div>
 
               <div class="projectHolder d-flex flex-lg-row flex-column mb-5">
-                <img src="../../../../../assets/img_placeholder.webp" alt="Project Preview 3"
+                <img src="../../../../../assets/shortlyP.webp" alt="Project Preview 3"
                   class="project-image img-fluid mb-3 mb-lg-0 shadow">
                 <div class="contentB px-3">
-                  <h2 class="mb-0">Nutritional Tracker</h2>
+                  <div class="d-flex justify-content-between">
+                    <h2 class="mb-0">Nutriweb</h2>
+                    <span class="dot text-warning">Alojando Backend<i class="ms-2 text-warning   fa-solid fa-circle"></i></span>
+                  </div>
                   <h3 class="techTag mb-3">#Full-Stack</h3>
+                  <span class="techBadge" data-bs-toggle="tooltip" title="API REST, Spring, Hibernate">
+                    <i class="fa-brands fa-java me-1"></i>Java
+                  </span>
+  
                   <span class="techBadge" data-bs-toggle="tooltip" title="Bootstrap,HTML,Sass, Typescript">
                     <i class="fa-brands fa-angular me-1"></i>Angular
                   </span>
@@ -119,20 +111,25 @@
                     su
                     cuenta y el sistema estima unos macros objetivo diarios según sus datos.
                   </p>
-                  <a class="tryBtn"><i class="fa-solid fa-code me-1"></i>Código</a>
-                  <a class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
+                  <a href="https://github.com/pablolop12/Shortly-URL-Shortener" target="_blank"
+                    aria-label="Visitar repositorio de GitHub" class="tryBtn"><i
+                      class="fa-solid fa-code me-1"></i>Código</a>
+                  <a href="https://nutriweb.pablolopezlujan.es" target="_blank" aria-label="Enlace a página de shortly"
+                    role="button" class="tryBtn"><i class="fa-solid fa-link me-1"></i>Pruébalo</a>
                 </div>
               </div>
+
+            
             </div>
 
-         ##Botón para mostrar más proyectos 
+
             <div class="text-center">
               <a class="textToggle" (click)="toggleShowMore()">
                 {{ showMore ? 'Mostrar menos proyectos' : 'Mostrar más proyectos' }}
                 <i class="fa ms-2" [ngClass]="showMore ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
               </a>
             </div>
-            -->
+
 
           </div>
 
